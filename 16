@@ -1,0 +1,126 @@
+package by.htp.les04.main;
+// 15. Написать программу, которая выводит на 
+//экран первые четыре степени числа π. 
+public class Tesk_5 {
+
+	public static void main(String[] args) {
+		
+	double P_two;
+		
+	    double P_tree;
+	
+	    double P_four;
+		 
+		double P_five;
+		  
+		double P;
+		
+		P = 3.14;
+		
+		 P_two = Math.pow(P, 2);
+		 
+		 System.out.println( P_two + " вторая степень  "  );
+		 
+		 P_tree = Math.pow(P,3);
+		 
+		 System.out.println(P_tree + " третья степень  " );
+		 
+		 P_four = Math.pow( P , 4);
+		 
+		 System.out.println(P_four + " четвертая степень  " );
+		 
+		 P_five = Math.pow(P , 5);
+		 
+		 System.out.println( P_five + " пятая степень  "  );
+		 
+// 16. Найти произведение цифр заданного четырехзначного числа. 
+
+		 
+
+			int x = 2345;
+			
+			int d0;
+			
+			int d1;
+			
+			int d2;
+			
+			int d3;
+			
+			int d4;
+			 
+			d0 = x % 10;   // 4_ая 
+			
+			d1 = (x % 100)/ 10; // 3_ая 
+			
+			d2 = (x % 1000) / 100; //2_ая 
+			
+			d3 = ( x / 1000);// 1_ая 
+			
+			d4 = ( d0 * d1 * d2 * d3);
+			
+			System.out.println(d4 + " Произведение заданного четырехзначного числа " );
+			
+	  //  17. Даны два числа. Найти среднее арифметическое кубов 
+	
+	//этих чисел и среднее геометрическое модулей этих чисел.
+	
+			double a;
+	        
+			double b;
+			
+			double S;  // Средне арифметическое 
+			
+			double A;  // средне геометрическое 
+			
+			a = -4;
+			
+			b = -3;
+			
+			a = Math.abs(a);
+			
+			b = Math.abs(b);
+			
+			
+			S = ( a*a*a + b*b*b)/2;
+			
+			System.out.println(S + "  Средне арифметическое  ");
+			
+			A = a*b;
+			
+			A = Math.sqrt(A);
+			
+			System.out.println(A + " Среднегеометрическое " );
+			
+//18. Дана длина ребра куба. 
+//Найти площадь грани, площадь полной поверхности и объем этого куба. 			
+	
+			int Ab;
+	        
+		     int S_3; 
+		    
+		     int Spl;
+		     
+		     int Vkb;
+		     
+		     
+			Ab = 2;
+			
+			S_3 = Ab * Ab; // Формула площади грани
+			
+			System.out.println(S_3 + " Площадь грани " );
+			
+			Spl = 6 * Ab * Ab ;
+			
+			System.out.println( Spl + " Площадь полной поверхности  " );
+			
+			Vkb = Ab * Ab * Ab;
+			
+			System.out.println(Vkb + " Обьем куба  " );
+			
+			
+	}
+	
+	
+
+}
