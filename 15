@@ -1,0 +1,144 @@
+package by.htp.les04.main;
+// 12. Вычислить расстояние между двумя точками 
+//с данными координатами (х1, у1)и (x2, у2))
+public class Tesk_4 {
+
+	public static void main(String[] args) {
+        
+		double x_1;
+		
+        double y_1;
+		
+		double x_22;
+		
+		double y_22;
+		
+		double S_4;
+		
+		x_1 = 6;
+		
+		y_1 = 8;
+		
+		x_22 =4 ;
+		
+		y_22 = 2;
+		
+		S_4 =  Math.pow(x_22 , 2) - 2*(x_22*x_1)+ Math.pow(x_1 , 2);
+		
+		S_4 = Math.pow(y_22 , 2 )- 2*(y_1*y_22) + Math.pow(y_1 , 2);
+		
+		S_4 = Math.sqrt( S_4 + S_4 );
+		
+		 System.out.println(S_4 + " Расстояние между точками 12_ое " );
+		
+		 // 13. Заданы координаты трех вершин треугольника 
+		 //(х1 у2),(х2, у2) ),(х3, у3). Найти его периметр и площадь
+		 double x1;
+			
+			double y1;
+			
+			double x2;
+			
+			double y2;
+			
+			double x3;
+			
+			double y3;
+			
+			x1 = 36;
+			
+			y1 = 5;
+			
+			x2 = 6;
+			
+			y2 = 50;
+			
+			x3 = 8;
+			
+			y3 = 7;
+			
+		
+			
+			double Ap;
+			
+			double A1;
+			
+			double A2;
+			
+			A1 =( Math.pow(x2,2)- 2*x2*x1 + Math.pow(x1,2)) ;
+			
+			A2 = ( Math.pow(y2, 2) - 2 *y1 * y2 + Math.pow(y1, 2));
+			
+			Ap = Math.sqrt(A1 + A2); // первая вершина 
+			
+			System.out.println(Ap + " Первая вершина " );
+			
+			double Bp;
+			
+			double B1;
+			
+			double B2;
+			
+			B1 = ( Math.pow(x3, 2) - 2 *x3 * x2 + Math.pow(x2, 2)  );
+			
+			B2 = (  Math.pow(y3, 2) - 2 *y3 * y2 + Math.pow(y2, 2)  );
+			
+			Bp =  Math.sqrt(B1 + B2 );
+			
+			System.out.println( Bp + " Вторая вершина  "  );
+			
+			double Cp;
+			
+			double C1;
+			
+			double C2;
+			
+			C1 = (  Math.pow(x3, 2) - 2 * x3 * x1 + Math.pow(x1, 2));
+			
+			C2 = ( Math.pow(y3, 2) - 2 * y3 * y1 + Math.pow(y1, 2));
+			
+			Cp = Math.sqrt(C1 + C2);
+			
+			System.out.println(Cp + " Третья вершина " );
+			
+			double P;
+			
+			double S;
+			
+			P = ( Ap + Bp + Cp ) / 2 ;
+
+			System.out.println(P + " Периметр " );
+			
+			S = Math.sqrt(P*(P-Ap)*(P - Bp)* (P - Cp));
+			
+			System.out.println( S + " Площадь  " );
+			
+			
+		 
+		 
+		//14. Вычислить длину окружности и площадь круга одного
+		 //и того же заданного радиуса R.
+		 
+		    double P_14 ;
+			
+			double R_14;
+			
+			double S_14;
+			
+			double C_14;
+			
+			P_14 = 3.14;
+			
+			R_14 = 2;
+			
+			S_14 = P_14 * R_14 * R_14 ;
+			
+			System.out.println(S_14 + " Площать круга   " );
+			
+			C_14 = 2 * P_14 * R_14 ;
+			
+			System.out.println(C_14 + " Длинна круга " ); 
+
+	}
+
+}
