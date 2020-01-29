@@ -1,0 +1,264 @@
+package by.htp.les04.main;
+
+// 37. Составить линейную программу, печатающую значение true, 
+//если указанное высказывание является истинным, и false — в противном случае
+
+public class Tesk_12 {
+
+	public static void main(String[] args) {
+
+// Целое число N является четным двузначным числом		
+	boolean A;
+	
+	A = true;
+	
+	boolean B;
+	
+	B = false;
+	
+	int N;
+	
+	N = 882;
+	
+	if( (N  %  2  == 0)&&( N / 100 == 0)   ) {
+    
+	System.out.println( A + " Четное двухзнаное число " );	
+		
+	} else {
+		
+		System.out.println(B + " Не частное не двухзначное число ");
+	}
+		
+	// • Сумма двух первых цифр 
+	//заданного четырехзначного числа равна сумме двух его последних цифр.	
+	
+	int x ;
+	
+	x = 1634;
+	
+	double d0;
+	
+	double d1;
+	
+	double d2;
+	
+	double d3;
+	
+	d0 = x % 10;   // 4_ая 
+	
+	d1 = (x % 100)/ 10; // 3_ая 
+	
+	d2 = (x % 1000) / 100; //2_ая 
+	
+	d3 = ( x / 1000);// 1_ая 
+
+
+	if ( d3 +  d2  ==  d1 + d0    ) {
+		
+		System.out.println( " true " + " Сумма двух левых(правых) чисел  " );
+		
+	} else {
+		
+		System.out.println( " false "  + "  Сумма    двух левых (правых) чисел  " );
+	}
+	
+	// Сумма цифр данного трехзначного числа N является четным числом.
+	
+	int N_1;
+	
+	N_1 = 368;
+	
+	double t0;
+	
+	double t1;
+	
+	double t2;
+	
+
+	
+    t0 = N_1 / 100;   // 4_ая 
+	
+	t1 = N_1 / 10 % 10; // 3_ая 
+	
+	t2 = N_1 % 10; //2_ая 
+
+  if ( ( t0 + t1 + t2 ) % 2 == 0     ) {
+	  
+	  System.out.println( " True  сумма трех чисел     "   );
+	  
+  } else {
+	  
+	  System.out.println(  "  false  сумма трех чисел     "  );
+  }
+	
+  //Точка с координатами (х, у) принадлежит части плоскости, 
+  
+  //лежащей между прямыми  х = m, y = n (m < п).
+  
+  int x_3;
+  
+  int y_3;
+  
+ x_3 = 4;
+ 
+ y_3 = 5;   /// я думаю что в условии ошибка , x = n ? y = n ! Иначе зачем y ?
+ 
+  int m ;
+
+  int n ;
+
+  m = 4;
+  
+  n = 5;
+  
+  boolean q;
+  
+  boolean w;
+  
+  q = false;
+  
+  w = true;
+  
+  if (m < n ) {
+	  
+	  System.out.println( q + " точка   не   преднолежит этой плоскости  "  );
+	  
+  } if (( m >=  n) && ( m <=  n  )    ) {
+	  
+	  
+	  System.out.println(  w +   "   ТОчка  лежит между этими прямыми      "   );
+	  
+	  
+		  
+		  
+	  }else {
+		  System.out.println( q + "  не лежит между прямыми   "   );
+	
+	  }
+  
+  
+  //Квадрат заданного трехзначного числа равен кубу суммы цифр этого числа.
+  
+	int t;
+	
+	t = 367 ;
+	
+	double y0;
+	
+	double y1;
+	
+	double y2;
+	
+    y0 = t / 100;   // 4_ая 
+	
+	y1 = t / 10 % 10; // 3_ая 
+	
+	y2 = t % 10; //2_ая 
+
+System.out.println( y2);
+	if ( Math.pow(t, 2) == Math.pow(y0+y1+y2, 3)    ) {
+		
+		System.out.println( w + " квадрат и куб этого числа равны  "   );
+	}
+		
+			
+			
+			
+		  else {
+			
+			System.out.println( q + " квадрат и кубы этого числа не равны  "   );
+			
+		}
+		
+	
+	// Треугольник со сторонами а,b,с является равнобедренным
+	
+	int a;
+	
+	int b;
+	
+	int c ;
+	
+	a = 7;
+	
+	b = 7;
+	
+	c = 8;
+
+	
+	if  (a == b)   { if ( a !=  c  )  {
+		
+		System.out.println( w + " Isosceles  "  );
+	} 
+	}
+	
+	if  ( a == c   ) {{ if( a != b)
+		
+		System.out.println( w + "Isosceles " );
+	}
+	
+	if ( c == b ) {{ if  (a != b) 
+	{
+		System.out.println( w +  "  Isosceles    "  );
+		
+	}
+	
+	if (( a == c )&& ( b == a)  ) {
+		
+		System.out.println( q + " The triangle is equilateral "  );
+	}
+		
+	if ( ( a != c )&& ( b != a ) && ( b != c  ) ) {
+		
+		System.out.println(  q +   "  The triangle is equilateral     "   );
+	}
+	}
+		
+	}
+	}
+	}
+}
+	package by.htp.les04.main;
+//Сумма каких-либо двух цифр заданного 
+	//трехзначного натурального числа N равна третьей цифре.
+public class Tesk_13 {
+
+	public static void main(String[] args) {
+		  int N_2;
+			 
+		     N_2 = 333 ; 
+		 
+			double res6;
+			
+			double res7;
+			
+			double res8;
+			
+		    res6 = N_2 / 100;   // 1_ая 
+			
+			res7 = N_2 / 10 % 10; // 2_ая 
+			
+			res8 = N_2 % 10; //3_ая 
+
+
+			
+			if (  (res6 + res7) == res8   ) {
+				
+				System.out.println( true  );
+			}
+			
+			if (( res7 + res8) == res6) {
+				
+				System.out.println( true);
+			}
+			
+			if (( res8 + res6  ) == res7  ) {
+				
+				System.out.println(true);
+			}
+			else {
+				System.out.println( false );
+			}
+			
+	}
+}
