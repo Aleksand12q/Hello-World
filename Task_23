@@ -1,0 +1,39 @@
+package by.htp.les04.main;
+import java.util.Scanner; 
+//4. Составить программу:  равны ли два числа а и b?
+
+public class Task_23 {
+
+	
+	
+	public static void main(String[] args) {
+		
+		Scanner num = new  Scanner(System.in);
+		
+		int a ;
+		
+		System.out.println( "Enter a " );
+		
+		a = num.nextInt();
+		
+		int b;
+		
+		System.out.println(  " Enter b   "  );
+		
+		b = num.nextInt();
+	
+		
+		
+		
+		if ( a == b   ) {
+			
+			System.out.println( " Числа a and b равны "  );
+		}
+		else {
+			
+			System.out.println(  "   Числа a and b не равны    "  );
+		}
+
+	}
+
+}
