@@ -1,0 +1,317 @@
+package by.htp.les04.main;
+// Составить программу: определения наименьшего из двух чисел а и b.
+
+public class Task_25 {
+
+	public static void main(String[] args) {
+	 
+	int a;
+	
+	int b;
+	
+	a = 8;
+	
+	b = 4;
+
+	if( a < b ) {
+		
+		System.out.println( " Число a меньше b    "   );
+	}else {
+		System.out.println( " Число b меньше a     "   );
+	}
+	
+	}
+
+}
+package by.htp.les04.main;
+// 6. Составить программу: определения наибольшего из двух чисел а и b. 
+public class Task_26 {
+
+	public static void main(String[] args) {
+     
+		int a ;
+		
+		int b;
+		
+		a = 6 ;
+		
+		b = 9;
+		
+		
+		if ( a > b) {
+			
+			System.out.println( "  число  a   больше    b  "  );
+		} else {
+			System.out.println( " Число b  больше а   " );
+		}
+
+	}
+
+}
+package by.htp.les04.main;
+
+// 7. Составить программу нахождения модуля выражения a*x*x + b*x + c при
+ //заданных значениях a, b, c и х
+public class Task_27 {
+
+	public static void main(String[] args) {
+		
+      int a ;
+      
+      int b ;
+      
+      int c;
+      
+      int x;
+      
+      int result;
+      
+      
+      a = 2 ;
+      
+      b = 4;
+      
+      c = 4;
+      
+      x = 6;
+      
+      result = Math.abs((a * x * x ) + (b * x) + c  );
+      
+		System.out.println( " Значение модуля вырожения  " + result );
+		
+		
+	}
+
+}package by.htp.les04.main;
+
+// 7. Составить программу нахождения модуля выражения a*x*x + b*x + c при
+ //заданных значениях a, b, c и х
+public class Task_27 {
+
+	public static void main(String[] args) {
+		
+      int a ;
+      
+      int b ;
+      
+      int c;
+      
+      int x;
+      
+      int result;
+      
+      
+      a = 2 ;
+      
+      b = 4;
+      
+      c = 4;
+      
+      x = 6;
+      
+      result = Math.abs((a * x * x ) + (b * x) + c  );
+      
+		System.out.println( " Значение модуля вырожения  " + result );
+		
+		
+	}
+
+}
+package by.htp.les04.main;
+//8. Составить программу нахождения наименьшего из квадратов двух чисел а и b. 
+public class Task_28 {
+
+	public static void main(String[] args) {
+		
+		int a;
+		
+		int b;
+		
+		int C_a ;
+		
+		int D_b ;
+		
+	    a = 4 ;
+	    
+	    b = 3;
+	    
+	    C_a = a * a ;
+	    
+	    D_b = b * b ;
+		
+		if ( C_a > D_b  ) {
+			
+			System.out.println(   " Квардрат    a   больше квадрата     b "   );
+			
+		} else {
+			
+			System.out.println( "  Квадрат     a  меньше квадрата       b  "   );
+		}
+		
+
+	}
+
+}
+package by.htp.les04.main;
+import java.util.Scanner;
+// 9. Составить программу, которая определит по трем введенным сторонам,
+//является ли данный треугольник равносторонним
+public class Task_29 {
+
+	public static void main(String[] args) {
+		
+	int a ;
+	
+	int b ;
+	
+	int c ;
+	
+	a = 9;
+	
+	b = 9;
+	
+	c = 4;
+	
+	if ( (a == b) && ( b == c) && ( c ==a ) ) {
+		
+		System.out.println(   "  Треугольник abc равностороний " );
+	} else {
+		
+		System.out.println(  " Треугольник   abc не равностороний   " );
+	}
+        		
+
+	}
+
+}package by.htp.les04.main;
+import java.util.Scanner;
+// 9. Составить программу, которая определит по трем введенным сторонам,
+//является ли данный треугольник равносторонним
+public class Task_29 {
+
+	public static void main(String[] args) {
+		
+	int a ;
+	
+	int b ;
+	
+	int c ;
+	
+	a = 9;
+	
+	b = 9;
+	
+	c = 4;
+	
+	if ( (a == b) && ( b == c) && ( c ==a ) ) {
+		
+		System.out.println(   "  Треугольник abc равностороний " );
+	} else {
+		
+		System.out.println(  " Треугольник   abc не равностороний   " );
+	}
+        		
+
+	}
+
+}
+package by.htp.les04.main;
+
+
+// 10. Составить программу, которая определит площадь какого круга меньше.
+public class Task_30 {
+
+	public static void main(String[] args) {
+	
+		
+		
+		int s;
+		
+		int s1;
+		
+		s = 4;
+		
+		s1 = 3;
+		
+		
+		 if ( s > s1 ) {
+			 System.out.println( " Площадь круга s больше s1 " );
+		 
+		 } else {
+			 
+			 System.out.println(  " Площадь круга s1 больше s " );
+		 }
+
+		
+
+	}
+
+}
+package by.htp.les04.main;
+//12. Даны три действительных числа. Возвести в квадрат те из них, 
+//значения которых неотрицательны, и в четвертую степень — отрицательные
+
+
+public class Task_31 {
+
+	public static void main(String[] args) {
+	
+		int a ;
+		
+		int b ;
+		
+		int c ;
+		
+		int l; // числа неотрицательные 
+		
+		int k; // числа отрицательные 
+		
+		int p;
+		
+		a = 4;
+		
+		b = -2;
+		
+		c = -4;
+		
+		if ( a > 0   ) {
+			
+			 l = a * a ; 
+			 System.out.println( "Квадрат не отрицательногое числа a  "  + l  );
+		
+		} else {
+			  l = a * a * a *a;
+			System.out.println (  "  Четвертая степень отрицательного числа a " + l );
+		}
+		 if ( b > 0) { k = b * b;
+		 
+		 System.out.println(  " квадрат не отрицательного числа b  " + k );
+			 
+			 
+		 } else {
+			
+			 k = b * b * b * b;
+			 
+			 System.out.println(  "   Четвертая степень отрицательного числа b " + k );
+			 
+		 }
+		 
+		 if (  c > 0 ) {
+			 
+			 p = c * c ;
+			 
+			 System.out.println( "   квадрат не отрицательного числа c  " + p  );
+		 } if ( c < 0) {
+			 
+			 p = c * c * c *c;
+			 System.out.println(  "    Четвертая степень отрицательного числа c   " + p  );
+			 
+			 
+		 }
+		 
+		 
+		
+
+	}
+
+}
