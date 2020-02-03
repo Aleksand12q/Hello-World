@@ -1,0 +1,106 @@
+package by.htp.les04.main;
+//36 Вычислить значение функции
+public class Task_65 {
+
+	public static void main(String[] args) {
+	
+
+		double x;
+		double y;
+
+		x = 4;
+
+		if (x <= 3) {
+			y = x * x - 3 * x - 9;
+			System.out.println("Значение функции " + y);
+		} else {
+			y = 1 / (Math.pow(x, 3) + 6);
+			System.out.println("Значение функции" + y);
+		}
+	}
+	}
+  package by.htp.les04.main;
+//37. Вычислить значение функции: 
+public class Task_66 {
+
+	public static void main(String[] args) {
+	
+
+		double x;
+		double y;
+
+		x = 2.0;
+
+		if (x >= 3) {
+			y = -(x * x) + 3 * x + 9;
+			System.out.println(" Значение функции " + y);
+		} else {
+			y = 1 / (Math.pow(x, 3) - 6);
+			System.out.println(" значение функции " + y);
+		}
+	}
+}
+package by.htp.les04.main;
+// 38. Вычислить значение функции:
+public class Task_67 {
+
+	public static void main(String[] args) {
+		
+		double x;
+		double y;
+
+		x = 5.2;
+
+		if ((x >= 0) && (x <= 3)) {
+			y = x * x;
+			System.out.println(" Значение функции " + y);
+		} else {
+			y = 4;
+			System.out.println("Значение функции" + y);
+		}
+		
+	}
+
+}
+package by.htp.les04.main;
+//39. Вычислить значение функции
+public class Task_68 {
+
+	public static void main(String[] args) {
+
+		double x;
+		double y;
+
+		x = 1.0;
+
+		if (x >= 8) {
+			y = -(x * x) + x - 9;
+			System.out.println("Значение функции" + y);
+		} else {
+			y = 1 / (Math.pow(x, 4) - 6);
+			System.out.println("Значение функции" + y);
+		}
+	}
+}
+package by.htp.les04.main;
+// 40. Вычислить значение функции:
+public class Task_69 {
+
+	public static void main(String[] args) {
+		
+
+		double x;
+		double y;
+
+		x = 3.5;
+
+		if (x <= 13) {
+			y = -(Math.pow(x, 3)) + 9;
+			System.out.println("Значение функции" + y);
+		} else {
+			y = -3 / (x + 1);
+			System.out.println("Значение функции" + y);
+		}
+	}
+	
+}
