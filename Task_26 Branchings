@@ -1,0 +1,196 @@
+package by.htp.les04.main;
+//31. Заданы размеры А, В прямоугольного отверстия и размеры х, у, z кирпича. 
+//Определить, пройдет ли кирпич через отверстие.
+public class Task_60 {
+
+	public static void main(String[] args) {
+	 
+	int A; // высота  отверстия
+	
+	int B; // ширина отверстия
+	
+	A = 10;
+	
+	B = 12;
+	
+	int x; // ширина кирпича
+	
+	int y; // высота либо толщина 
+	
+	int z; // длинна 
+	
+	x = 2;
+	
+	y = 3;
+	
+	z = 2;
+	
+	if (( A > x)&&( B > z )) {
+		System.out.println( " Кирпич пройдет   "  );
+	}else {
+		System.out.println( " Кирпич не пойдет  " );
+	}
+
+	}
+  }
+  
+  package by.htp.les04.main;
+//32. Написать программу, которая по заданным трем числам определяет,
+//является ли сумма каких-либо двух из них положительной
+public class Task_61 {
+
+	public static void main(String[] args) {
+	int a ;
+	
+	int b ;
+	
+	int c ;
+	
+	int s;
+	
+	a = -4;
+	
+	b = 3;
+	
+	c = -6;
+	
+	s = a + b;
+	
+	if ( s > 0  ) {
+		
+		System.out.println(" Сумма положительная  " + s );
+	}else {
+		System.out.println(" Сумма отрицательная " + s  );
+	}
+	s = b + c;
+	
+	if ( s > 0 ) {
+		System.out.println( " Сумма положительна " + s );
+	}else {
+		System.out.println(" Сумма отрицательна " + s );
+	}
+     s = c + a;
+     if ( s > 0 ) {
+    	 System.out.println( " Сумма пложительная " + s );
+     }else {
+    	 System.out.println(" Сумма отрицательная " + s);
+        }
+     }
+}
+
+
+package by.htp.les04.main;
+// 33. Написать программу, которая по паролю будет определять уровень доступа 
+//сотрудника к секретной информации в базе данных.
+///Доступ к базе имеют только шесть человек, 
+//разбитых на три группы по степени доступа.
+//Они имеют следующие пароли: 9583, 1747 — 
+//доступны модули баз А, В, С; 3331, 7922 — 
+//доступны модули баз В, С; 9455, 8997 — доступен модуль базы С
+public class Task_62 {
+
+	public static void main(String[] args) {
+
+		int password;
+
+		password = 8888;
+
+		if (password == 9583 || password == 1747) {
+			System.out.println("Доступны модули баз А, В, С");
+		} else if (password == 3331 || password == 7922) {
+			System.out.println(" Доступны модули баз В, С");
+		} else if (password == 9455 || password == 8997) {
+			System.out.println(" Доступен модуль баз С");
+		} else {
+			System.out.println(" Отказанно в доступе ");
+		}
+	}
+ }
+package by.htp.les04.main;
+// 34. Составить программу, реализующую эпизод применения компьютера 
+//в книжном магазине. Компьютер запрашивает стоимость книг, сумму денег, 
+//внесенную покупателем; если сдачи не требуется, печатает на экране 
+//«спасибо»; если денег внесено больше, чем необходимо,
+//то печатает «возьмите сдачу» и указывает сумму сдачи; если денег недостаточно,
+//то печатает сообщение об этом и указывает размер недостающей суммы.
+public class Task_63 {
+
+	public static void main(String[] args) {
+	
+     int sale;
+     
+     int a;
+     
+     int b;
+     
+     sale = 230;
+     
+     a  = 330;
+     
+     if ( sale == a   ) {
+    	 
+    	 System.out.println( " Thak you "  );
+     
+     }  else if ( a > sale) {
+    	 
+    	 b = a - sale;
+    	 System.out.println( " Спасибо вам , возьмите здачу  "  +  b );
+     }else {
+    	 System.out.println( " Недостаточно средств  " );
+     }
+	}
+ }
+ package by.htp.les04.main;
+// 35. Вычислить число и месяц в невисокосном году по номеру дня. 
+public class Task_64 {
+
+	public static void main(String[] args) {
+	
+		int daymohth;
+		int numday;
+
+		daymohth = 0;
+		numday = 399;
+
+		if (numday > 0 && numday <= 31) {
+			daymohth = numday;
+			System.out.println(" Январь " + daymohth + " число");
+		} else if (numday > 31 && numday <= 59) {
+			daymohth = numday - 31;
+			System.out.println(" Февраль " + daymohth + " число");
+		} else if (numday > 59 && numday <= 90) {
+			daymohth = numday - 59;
+			System.out.println(" Март " + daymohth + " число");
+		} else if (numday > 90 && numday <= 120) {
+			daymohth = numday - 90;
+			System.out.println(" Апрель " + daymohth + " число");
+		} else if (numday > 120 && numday <= 151) {
+			daymohth = numday - 120;
+			System.out.println(" Май " + daymohth + " число");
+		} else if (numday > 151 && numday <= 181) {
+			daymohth = numday - 151;
+			System.out.println(" Июнь " + daymohth + " число");
+		} else if (numday > 181 && numday <= 212) {
+			daymohth = numday - 181;
+			System.out.println(" Июль " + daymohth + " число");
+		} else if (numday > 212 && numday <= 243) {
+			daymohth = numday - 212;
+			System.out.println(" Август " + daymohth + " число");
+		} else if (numday > 243 && numday <= 273) {
+			daymohth = numday - 243;
+			System.out.println(" Сентябрь " + daymohth + " число");
+		} else if (numday > 273 && numday <= 304) {
+			daymohth = numday - 273;
+			System.out.println(" Октябрь " + daymohth + " число");
+		} else if (numday > 304 && numday <= 334) {
+			daymohth = numday - 304;
+			System.out.println(" Ноябрь " + daymohth + " число");
+		} else if (numday > 334 && numday <= 365) {
+			daymohth = numday - 334;
+			System.out.println("Декабрь " + daymohth + " число");
+		} else {
+			System.out.println("Такого дня в году  не существует ");
+		}
+
+	}
+}
