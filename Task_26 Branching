@@ -1,0 +1,306 @@
+package by.htp.les04.main;
+//26. Написать программу нахождения суммы большего и меньшего из трех чисел.
+public class Task_45 {
+
+	public static void main(String[] args) {
+
+		int a ;
+		
+		int b ; 
+		
+		int c;
+
+		a = 1;
+		
+		b = 1;
+		
+		c = 2;
+		
+		int max;
+		
+	    int min;
+		
+		 if ( a < b  ) {
+			 if ( b < c  ) {
+			     min = a + b;	 
+				 max = b + c;
+				 System.out.println( max );
+			     System.out.println( min );
+			 }
+			 
+		 }
+		 
+		 if ( c < b  ) {
+			 if (b < a ) {
+				 min = c + b;
+				 max = b + a;
+				 System.out.println( max );
+			     System.out.println( min );
+			 }
+		 }
+		
+		 if ( a < c ) {
+			 if ( c < b) {
+				 min = a + c;
+				 max = c + b;
+				 System.out.println( max );
+			     System.out.println( min );
+			 }
+		 }
+        if ( b < a ) {
+        	if ( a < c) {
+        		min = a + b;
+        		max = a + c ;
+        	    System.out.println( min ); 
+        		System.out.println( max );
+        	}
+        }
+	
+        if ( b < c ) {
+        	
+        	if ( c < a ) {
+        		min = b + c ;
+        		max = c + a ;
+        		System.out.println( min );
+        		System.out.println( max  );
+        		
+        	}
+        }
+     
+        if ( a == b) {
+        	
+        	if ( b < c  ) {
+        		min = a + b;
+        		max = b + c;
+        	System.out.println( min );
+        	System.out.println( max );
+        	}
+        }
+	
+        if (a == c) {
+        	if (c < b ) {
+        		min = a + c ;
+        		max = b + c ;
+        		System.out.println( min );
+        		System.out.println( max );
+        	}
+        }
+	
+        if (b == c ) {
+        	if ( c < a  ) {
+        		min = b + c ;
+        		max = c + a ;
+        		System.out.println( min );
+        		System.out.println(max);
+           }
+        }
+	     
+        if ( a == b ) {
+        	if ( b == c  ) {
+        		System.out.println( " Условие не коректное "   );
+        	}
+        }
+     }
+}
+
+
+package by.htp.les04.main;
+// 27. Найти max{min(a, b), min(c, d)}. 
+public class Task_46 {
+
+	public static void main(String[] args) {
+		int a;
+		int b;
+		int c;
+		int d;
+		int min_ab;
+		int min_cd;
+		int max;
+
+		a = 6;
+		b = 1;
+		c = 4;
+		d = 2;
+
+		if (a > b) {
+			min_ab = b;
+		} else {
+			min_ab = a;
+		}
+
+		if (c > d) {
+			min_cd = d;
+		} else {
+			min_cd = c;
+		}
+
+		if (min_cd > min_ab) {
+			max = min_cd;
+		} else {
+			max = min_ab;
+		}
+
+		System.out.println(" max{min(" + a + "," + b + "),min(" + c + "," + d + ")} = " + max);
+	}
+	}
+  
+  package by.htp.les04.main;
+//28. Даны три числа a, b, с. Определить, какое из них равно d.
+//Если ни одно не равно d, то найти max(d — a, d — b, d — c).
+public class Task_48 {
+
+	public static void main(String[] args) {
+	
+		int a ; 
+		
+		int b ; 
+		
+		int c ; 
+		
+		int d ;
+		
+		int i;
+		
+		int f ; 
+		
+		int g ;
+		
+		int max;
+		
+		a = 3;
+		
+		b = 4;
+		
+		c = 5;
+		
+		d = 9;
+		
+		if ( a == d  ) {
+			System.out.println( " a == d "  );
+		}else if (b == d )  {
+			System.out.println(" b == d ");
+		}else if( c == d ) {
+			System.out.println( "d == c  " );
+		}else {
+			
+			i = d - a;
+			
+			f = d - b;
+			
+			g = d - c;
+			
+			if (( i > f )&&(f > g ) ) {
+				
+				max = i;
+				
+				System.out.println( " i "+" = "+ max );
+			
+			} else if ((f > g)&& ( g > i)   ) {
+				
+				max = f;
+				
+				System.out.println(" f "+" = "+ max );
+			}else {
+				max = g;
+				System.out.println( " g "+" = " + max );
+			}
+			
+		}
+		
+
+	}
+
+}
+
+
+package by.htp.les04.main;
+//29. Даны три точки А(х1,у1), В(х2,у2) и С(х3,у3).
+//Определить, будут ли они расположены на одной прямой.
+public class Task_49 {
+
+	public static void main(String[] args) {
+
+		int x1;
+		
+		int x2;
+		
+		int x3;
+		
+		int y1;
+		
+		int y2;
+		
+		int y3;
+		
+		int m1;
+		
+		int n2;
+		
+		int z3;
+
+		x1 = 1;
+		
+		y1 = 1;
+		
+		x2 = 2;
+		
+		y2 = 5;
+		
+		x3 = 4;
+		
+		y3 = 3;
+
+		z3 = (x3 - x1) / (y3 - y1);
+		n2 = (x3 - x2) / (y2 - y1);
+		m1 = (x2 - x1) / (y2 - y1);
+
+		if ((z3 == n2) || (z3 == m1)) {
+			System.out.println(" Точки распаложены  на одной прямой");
+		} else {
+			System.out.println(" Точки не распаожены на одной прямой");
+		}
+
+	}
+
+}
+
+
+package by.htp.les04.main;
+//30. Даны действительные числа а,b,с. Удвоить эти числа, если а > b > с, 
+//и заменить их абсолютными значениями, если это не так.
+public class Task_59 {
+
+	public static void main(String[] args) {
+	    
+		int a;
+		
+		int b;
+		
+		int c;
+
+		a = 5;
+		
+		b = 4;
+		
+		c = 2;
+
+		if ((a > b) && (b > c)) {
+			
+			a *= a ;
+			
+			b *= b  ;
+			
+			c *= c  ;
+			
+		} else {
+			a = Math.abs(a);
+			
+			b = Math.abs(b);
+			
+			c = Math.abs(c);
+		}
+		System.out.println( " Замена их обсолютными значениями " + a + ", " + b + ", " + c);
+
+	}
+
+}
