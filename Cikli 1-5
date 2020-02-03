@@ -1,0 +1,83 @@
+package by.jonline.les05.main;
+// 1. Необходимо вывести на экран числа от 1 до 5. 
+public class Task_1 {
+
+	public static void main(String[] args) {
+		 
+		for (int i = 1; i < 6; i++) {
+			System.out.print (  i );
+		}
+     }
+  }
+package by.jonline.les05.main;
+//2. Необходимо вывести на экран числа от 5 до 1.
+public class Task_2 {
+
+	public static void main(String[] args) {
+		
+		for (int i = 5; i > 0; i--) {
+			System.out.print(i);
+		}
+	}
+}
+package by.jonline.les05.main;
+// 3. Необходимо вывести на экран таблицу умножения на 3: 
+public class Task_3 {
+
+	public static void main(String[] args) {
+		// Если не задать условия  в цикле то , будет умножать до бесконечности! 
+		int sum;
+		
+		for ( int i = 1 ; i <= 10; i++  ) {
+			
+			sum = i * 3;
+			
+			System.out.println( sum );
+		}
+
+	}
+
+}
+
+package by.jonline.les05.main;
+//4. С помощью оператора while напишите программу вывода 
+//всех четных чисел в диапазоне от 2 до 100 включительно
+public class Task_4 {
+
+	public static void main(String[] args) {
+	
+		int a ;
+		
+		a = 2 ; // от двух 
+		
+		while( a<=100 ) {
+			
+			if ( a%2==0 ) {
+				System.out.print( a  );
+			} a++;
+		}
+
+	}
+
+}
+package by.jonline.les05.main;
+//5. С помощью оператора while напишите программу определения
+//суммы всех нечетных чисел в диапазоне от 1 до 99 включительн
+public class Task_5 {
+
+	
+	public static void main(String[] args) {
+		
+    int a ;
+
+	a = 1 ; // от двух	
+
+	while (a<=99 ) {
+		if (a%3==0 ) {
+			System.out.print(a);
+			
+		}
+		a++;
+	}
+	}
+}
