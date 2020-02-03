@@ -1,0 +1,551 @@
+package by.jonline.les05.main;
+// 21. Составить программу для вычисления значений функции 
+//F(x) на отрезке [а, b] с шагом h.
+//Результат представить в виде таблицы, 
+//первый столбец которой – значения  аргумента,
+//второй - соответствующие значения функции: 
+public class Task_30 {
+
+	public static void main(String[] args) {
+
+		int a;
+		
+		int b;
+		
+		double x;
+		
+		double y;
+		
+		double h;
+
+		a = 4;
+		
+		b = 8;
+		
+		h = 2;
+
+		System.out.println("_______________________________");
+		
+		System.out.println("   x    |    y       ");
+		
+		System.out.println("_______________________________");
+
+		for (x = a; x <= b; x += h) {
+			
+			System.out.print("|x = " + x + " | ");
+			
+			y = x - Math.sin(x);
+			
+			System.out.println("y =" + y + " |");
+		}
+	}
+}
+package by.jonline.les05.main;
+//22. Составить программу для вычисления значений функции  
+//F(x) на отрезке [а, b] с шагом h. 
+//Результат представить в виде таблицы,
+//первый столбец которой – значения  аргумента,
+//второй - соответствующие значения функции: 
+public class Task_31 {
+
+	public static void main(String[] args) {
+		int a;
+		
+		int b;
+		
+		double x;
+		
+		double y;
+		
+		double h;
+
+		a = 2;
+		
+		b = 8;
+		
+		h = 3;
+
+	
+		System.out.println("_______________________________");
+		
+		System.out.println("   x    |    y       ");
+		
+		System.out.println("_______________________________");
+
+		for (x = a; x <= b; x += h) {
+			
+			System.out.print("|x = " + x + " | ");
+			
+			y = Math.pow(Math.sin(x), 2);
+			
+			System.out.println("y =" + y + " |");
+		}
+	}
+}
+package by.jonline.les05.main;
+// 23. Составить программу для вычисления значений функции  
+//F(x) на отрезке [а, b] с шагом h.
+//Результат представить в виде таблицы, первый столбец которой – значения  аргумента, 
+//второй - соответствующие значения функции:
+public class Task_32 {
+
+	public static void main(String[] args) {
+		int a;
+		
+		int b;
+		
+		double x;
+		
+		double y;
+		
+		double h;
+
+		a = 2;
+		
+		b = 10;
+		
+		h = 3;
+
+	
+		System.out.println("_______________________________");
+		
+		System.out.println("   x    |    y       ");
+		
+		System.out.println("_______________________________");
+
+		for (x = a; x <= b; x += h) {
+			
+			System.out.print("|x = " + x + " | ");
+			
+			y = (1 / Math.tan(x / 3)) + ((1 / 2) * Math.sin(x));
+			
+			System.out.println("y =" + y + " |");
+
+		}
+
+	}
+
+}
+package by.jonline.les05.main;
+//24. Вводится натуральное число.
+//Найти сумму четных цифр, входящих в его состав. Преобразовать его в другое число, 
+//цифры которого будут следовать в обратном порядке по сравнению с введенным числом.
+public class Task_33 {
+
+	public static void main(String[] args) {
+	
+		
+		int num;
+		
+		int rest;
+		
+		double sum;
+
+		num = 42;
+		
+		sum = 0;
+
+		int n1;
+		
+		n1 = 0;
+
+		while (num != 0) {
+			
+			rest = num % 10;
+			
+			if (rest % 2 == 0) {
+				
+				sum += rest;
+				
+				n1 = n1 * 10 + num % 10;
+				
+				num /= 10;
+			}
+		}
+		System.out.println("    " + sum + " ");
+		
+		System.out.println("    " + n1);
+
+	}
+}
+package by.jonline.les05.main;
+//25. Требуется определить факториал числа, которое ввел пользователь.
+
+public class Task_34 {
+
+	public static void main(String[] args) {
+      
+
+		int result;
+		
+		int n;
+
+		result = 1;
+		
+		n = 5;// Число пользователя 
+
+		if (n < 0) {
+			
+			System.out.println(" нельзя высчитать факториал ");
+		} 
+		else  {
+
+			
+			for (int i = 2; i <= n; i++) {
+				
+				result *= i;
+
+				
+				if (n == 0 || n == 1) {
+					
+					System.out.println(" Факториал  равен " + result);
+				}
+			}
+		}
+		System.out.println(" Факториал  равен " + result);
+	}
+		
+}
+package by.jonline.les05.main;
+/*
+ * 27. Для каждого натурального числа в промежутке от m до n вывести все
+ * делители, кроме единицы и самого числа. m и n вводятся с клавиатуры.
+ */
+
+public class Task_35 {
+
+	public static void main(String[] args) {
+	
+
+		int m;
+		
+		int n;
+
+		m = 2;
+		
+		n = 100;
+
+		      for (int i = 1; i <= n; i++) {
+
+			if (n % i == 0 && i != m && i != 1) {
+
+				System.out.print(+i + ", ");
+			}
+		}
+		System.out.println();
+
+	}
+
+}
+package by.jonline.les05.main;
+/*
+ * /* 28. Написать программу, в которой вводятся два операнда Х и Y и знак
+ * операции (+, –, /, *). Вычислить результат Z в зависимости от знака.
+ * Предусмотреть реакции на возможный неверный знак операции, а также на ввод
+ * Y=0 при делении. Организовать возможность многократных вычислений без
+ * перезагрузки программа (т.е. построить цикл). В качестве символа прекращения
+ * вычислений принять ‘0’.
+ */
+public class Task_36 {
+
+	public static void main(String[] args) {
+	
+
+		double x;
+		
+		double y;
+		
+		double z;
+
+		x = 0;
+		
+		y = 3.2;
+		
+		String operator = "+";
+
+		
+		do {
+			
+			switch (operator) {
+			
+			case "-":
+				
+				z = x - y;
+				
+				System.out.println(+x + "-" + y + "=" + z);
+				
+				break;
+			
+			case "+":
+			
+				z = x + y;
+				
+				System.out.println(+x + "+" + y + "=" + z);
+				
+				break;
+			
+			case "*":
+				
+				z = x * y;
+				
+				System.out.println(+x + "*" + y + "=" + z);
+				
+				break;
+			
+			case "/":
+				
+				if (y != 0) {
+					
+					z = x / y;
+					
+					System.out.println(+x + "/" + y + "=" + z);
+				
+				} else {
+					
+					System.out.println("на ноль делить нельзя");
+				}
+				
+				break;
+			
+			default:
+				
+				System.out.println("неверный знак");
+				
+				break;
+			}
+		
+		} while (x != 0);
+	}
+
+
+	}
+package by.jonline.les05.main;
+// 29. Даны два числа. Определить цифры, 
+//входящие в запись как первого так и второго числа
+public class Task_37 {
+
+	public static void main(String[] args) {
+		int a;
+		
+		int b;
+		
+		int c;
+		
+		int d;
+
+		a = 91;
+		
+		b = 81;
+
+		while (a > 0) {
+			
+			d = a % 10;
+			
+			a = a / 10;
+			
+			c = b;
+			
+			while (c > 0) {
+				
+				if (c % 10 == d) {
+					
+					System.out.println( d);
+					
+					break;
+				
+				}
+				
+				
+				c = c / 10;
+			}
+		}
+	}
+
+}
+
+package by.jonline.les05.main;
+
+//* 31. Компьютер генерирует пять чисел в диапазоне от 1 до 15 включительно.
+//* Человек пытается их угадать. Программа должна выводить угаданные и
+//* неугаданные числа из тех, что сгенерировала программа, а также ошибочные
+//* числа пользователя.
+
+public class Task_38 {
+
+	public static void main(String[] args) {
+		
+		int n;
+		int d;
+
+		n = (int) (Math.random() * 10 + 6);
+		System.out.println("31) ");
+
+		d = 15;
+		if (d < n) {
+			System.out.println("Неверно. Загадано число " + n);
+		}
+		if (d > n) {
+			System.out.println("Неверно. Загадано число " + n);
+		}
+		if (d == n) {
+			System.out.println("Верно!!! " + n);
+
+		}
+	}
+
+}
+package by.jonline.les05.main;
+//// 33. Найдите наибольшую цифру данного натурального числа.
+public class Task_39 {
+
+	public static void main(String[] args) {
+		int num;
+		
+		int a;
+		
+		int b;
+		
+		int c;
+
+		num = 581;
+
+		
+		a = num % 10;
+		
+		b = (num / 10) % 10;
+		
+		c = (num / 100) % 10;
+
+		
+
+		if (a >= b & a > c || a > c & b >= a) {
+			
+			System.out.println("В числе " + num + " наибольшая цифра " + a);
+		} 
+		else {
+			
+			if (b > a & b >= c) {
+				
+				System.out.println("В числе " + num + " наибольшая цифра " + b);
+			} 
+			else {
+				
+				System.out.println("В числе " + num + " наибольшая цифра " + c);
+			}
+		}
+
+	}
+
+}
+package by.jonline.les05.main;
+//// 34. Найдите все четырехзначные числа, сумма цифр каждого из которых равна 15.
+public class Task_40 {
+
+	public static void main(String[] args) {
+	
+		int a;
+		
+		int b;
+		
+		int c;
+		
+		int d;
+		
+		int k;
+		
+		int i;
+
+      	for (k = 1000; k < 10000; k++) {
+			
+      		a = k % 10;
+			
+      		b = (k / 10) % 10;
+			
+      		c = (k / 100) % 10;
+			
+			d = k / 1000;
+			
+			i = a + b + c + d;
+			
+			if (i == 15) {
+				
+				System.out.print(k + " ");
+
+			}
+
+		}
+
+	}
+		
+}
+package by.jonline.les05.main;
+// // 35. Найдите количество четных цифр данного натурального числа.
+
+public class Task_41 {
+
+	public static void main(String[] args) {
+	
+
+		int num;
+		
+		int rest;
+
+		num = 124;
+		
+		int count = 0;
+
+	
+
+		while (num != 0) {
+			
+			rest = num % 10;
+		
+			num = num / 10;
+			
+			if (rest % 2 == 0) {
+				
+				count++;
+			}
+		}
+		System.out.println(count);
+
+	}
+
+}
+package by.jonline.les05.main;
+// //36. Два двузначных числа, записанных одно за другим , 
+//образуют четырёхзначное число, 
+//которое делится на их произведение. Найти эти числа. 
+public class Task_42 {
+
+	public static void main(String[] args) {
+		
+		int a;
+		
+		int b;
+		
+		int c;
+
+	
+
+		for (a = 5; a < 100; a++) {
+			
+			for (b = 10; b < 100; b++) {
+				
+				c = a * 100 + b;
+				
+				if (c % (a * b) == 0) {
+					
+					c /= (a * b);
+					
+					System.out.println();
+					
+					System.out.print(+a + " " + b);
+					
+					c = 0;
+				}
+			}
+		}
+	}
+
+	}
