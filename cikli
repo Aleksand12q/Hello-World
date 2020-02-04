@@ -1,0 +1,1092 @@
+package by.htp.ciklies.main;
+import java.util.Scanner;
+public class cikliestask {
+
+	public static void task1() {
+		
+// 1. Необходимо вывести на экран числа от 1 до 5.		
+	
+		for (int i = 1; i < 6; i++) {
+			
+			System.out.print (  i );
+		}
+     }
+
+  public static void task2() {
+	  
+// 2. Необходимо вывести на экран числа от 5 до 1.   	  
+  
+		for (int i = 5; i > 0; i--) {
+			
+			System.out.print(i);
+		}
+	}
+   
+  public static void task3() {
+	  
+  // 3. Необходимо вывести на экран таблицу умножения на 3: 	  
+  
+	      int sum;
+	      
+	  for ( int i = 1 ; i <= 10; i++  ) {
+			
+			sum = i * 3;
+			
+			System.out.println( sum );
+		}
+	}
+  
+  public static void task4() {
+	  
+//4. С помощью оператора while напишите программу вывода всех четных чисел в
+//диапазоне от 2 до 100 включительно 	  
+  
+	int a ;
+		
+		a = 2 ; // от двух 
+		
+		while( a<=100 ) {
+			
+			if ( a%2==0 ) {
+				
+				System.out.print( a  );
+			} a++;
+		}
+
+	}  
+  
+   public static void task5() {
+// 5. С помощью оператора while напишите программу
+//определения суммы всех нечетных чисел в диапазоне от 1 до 99 включительно. 	   
+	   
+	   int a ;
+
+		a = 1 ; // от двух	
+
+		while (a <= 99 ) {
+			
+			if (a % 3 == 0 ) {
+				
+				System.out.print(a);
+				
+			}
+			
+			a++;
+		}
+}
+   
+    public static void task6() {
+   // 6. Напишите программу, где пользователь вводит любое целое положительное число.
+   //А программа суммирует все числа от 1 до введенного пользователем числа. 	
+       	
+    	 int a;
+  	   
+  	   a = 45;
+  	   
+  	   for ( int i = 1; i < a; i++  ) {
+  		   System.out.print(i );
+  	   }
+  	  
+  	  } 
+   
+     public static void task7() {
+    	 
+   // 7. Вычислить значения функции на отрезке [а,b] c шагом h:  	 
+    
+   
+    		int a;
+    		
+    		int b;
+    		
+    		double x;
+    		
+    		double y;
+    		
+    		double h;
+
+    		a = 3;
+    		
+    		b = 6;
+    		
+    		h = 1;
+
+    	
+          for (x = a; x <= b; x += h) {
+    		
+        	  System.out.print("x = " + x + ",");
+    			
+        	  if (x > 2) {
+    			
+        		  y = x;
+    				
+        		  System.out.println("y =" + y);
+    			} 
+        	  else if (x <= 2) {
+    			
+        		  y = -x;
+    				
+        		  System.out.println("y =" + y);
+    			}
+
+    		}
+    	}
+     
+     
+      public static void task8() {
+   
+  // 8. Вычислить значения функции на отрезке [а,b] c шагом h:   	  
+    	  
+    		int a;
+    		
+    		int b;
+    		
+    		int c;
+    		
+    		double x;
+    		
+    		double y;
+    		
+    		double h;
+
+    		a = 3;
+    		
+    		b = 6;
+    		
+    		c = 1;
+    		
+    		h = 1;
+
+    		
+
+    		for (x = a; x <= b; x += h)
+    		
+    		{
+    			System.out.print(" x = " + x + ",");
+    			
+    			if (x == 15)
+    			
+    			{
+    				y = (x + c) * 2;
+    				
+    				
+    				System.out.println("y = " + y);
+    				
+    			} else if (x != 15)
+    		
+    			{
+    				y = (x - c) + 6;
+    				
+    				System.out.println("y = " + y);
+    			
+    			}
+    		
+    		}
+
+    	}
+      
+     public static void task9() {
+    	 
+  //9. Найти сумму квадратов первых ста чисел.  	 
+    	 
+    
+
+ 		int Sum;
+
+ 		Sum = 0;
+
+ 		for (int i = 1; i <= 100; i++) {
+ 			
+ 			Sum += Math.pow(i, 2);
+ 		
+ 			System.out.println(Sum);
+ 		}
+
+ 	}
+     
+   public static void task10() {
+// 10. Составить программу нахождения произведения квадратов первых двухсот чисел.	   
+	   
+		
+		int mult;
+
+		mult = 1;
+
+		for (int i = 1; i <= 200; i++) {
+			
+			mult *= Math.pow(i, 2);
+		}
+
+		System.out.println( mult);
+	}
+	
+
+    public static void task11() {
+    	
+// 11. Составить программу нахождения разности кубов первых двухсот чисел     	
+   
+   
+    	int rezult;
+
+		rezult = 0;
+
+		for (int i = 1; i <= 200; i++) {
+			
+			rezult -= Math.pow(i, 3);
+		}
+
+		System.out.println(rezult);
+	
+
+	}	
+    	
+     public static void task12() {
+    	 
+// 12. Последовательность аn строится так: а1 = 1, an =6+ аn-1 , для каждого n >1
+//Составьте программу нахождения произведения первых 10 членов этой последовательности.     	 
+     
+    		
+ 		int a1;
+ 		
+ 		int a2;
+
+ 		a1 = 1;
+
+ 		System.out.print( a1);
+
+ 		for (int i = 1; i < 10; i++) {
+ 			
+ 		a2 = 6 + a1;
+ 			
+ 		a1 = a2;
+ 			
+ 		System.out.print(a2);
+ 		}
+ 		
+     }
+ 
+   public static void task13() {
+	   
+// 13. Составить таблицу значений функции y = 5 - x2/2 на отрезке [-5; 5] с шагом 0.5	   
+ 
+	   int a;
+		
+		int b;
+		
+		double x;
+		
+		double y;
+		
+		double h;
+
+		a = -5;
+		
+		b = 5;
+		
+		h = 0.5;
+
+		
+         for (x = a; x <= b; x += h) {
+       	  
+			System.out.print(" x = " + x + ",");
+			
+			y = 5 - ((x * x) / 2);
+			
+			System.out.println(" y =" + y);
+		}
+
+	}
+   
+   public static void task14() {
+	   
+   // 14. Дано натуральное n. вычислить: 1 + 1/2 + 1/3 + 1/4 + ... + 1/n. 
+		double n;
+
+		n = 0;
+
+		for (int i = 1; i < 10; i++) {
+			n += 1 / i;
+		}
+
+		System.out.println( n);
+			
+		
+		}
+  
+   
+      public static void task15() {
+    	  
+// 15. Вычислить : 1+2+4+8+...+ 2 в 10 степени.       
+      
+    	  int sum;
+
+  		sum = 1;
+
+  		for (int i = 1; i <= 15; ++i) {
+  			sum += Math.pow(2.0, i);
+  		}
+
+  		System.out.println( sum);
+
+  	}
+      
+   public static void task16() {
+	   
+   // 16. Вычислить: (1+2)*(1+2+3)*...*(1+2+...+10). 
+   
+	   int sum;
+		
+		long rezult;
+
+		sum = 1;
+		
+		rezult = 1;
+
+		for (int i = 2; i <= 10; i++) {
+			
+			sum = sum + i;
+			
+			rezult = rezult * sum;
+		}
+
+		System.out.println( rezult);
+	}
+   
+   public static void task17() {
+//17. Даны действительное (а) и натуральное (n). вычислить: a(a+1)...(a+n-1) 	   
+	   
+	    double a;
+		
+		int n;
+		
+		a = 0.5;
+		
+		n = 6;
+
+		for (int i = 1; i < n; i++) {
+			
+			a =  (a + i);
+            
+			a*=a;		
+		}
+
+		System.out.println( a);
+
+	}
+   
+   public static void task18() {
+// 18. Даны числовой ряд и некоторое число е. Найти сумму тех членов ряда, 
+//модуль которых больше или равен заданному е. Общий член ряда имеет вид: 
+	   
+	double a;
+		
+		double e;
+		
+		int n;
+		
+		double sum;
+
+		a = 0;
+		
+		e = 0.01;
+		
+		n = 6;
+		
+		sum = 0;
+
+		for (int i = 1; i < n; i++) {
+			
+			a = (1 / Math.pow(2, i)) + (1 / Math.pow(3, i));
+			
+			if (Math.abs(a) >= e) {
+				
+				sum += a;
+			}
+		}
+
+		System.out.println( sum);
+
+	}	
+	   
+     public static void task19() {
+    	 
+ // 19. Даны числовой ряд и некоторое число е. 
+//Найти сумму тех членов ряда, модуль которых больше или равен заданному е
+ //. Общий член ряда имеет вид:    	 
+    	 
+    
+
+ 		double a;
+ 		
+ 		double e;
+ 		
+ 		int n;
+ 		
+ 		double sum;
+
+ 		a = 0;
+ 		
+ 		e = 0.01;
+ 		
+ 		n = 6;
+ 		
+ 		sum = 0;
+
+ 		for (int i = 1; i < n; i++) {
+ 			
+ 			a = (1 / Math.pow(2, i)) + (1 / Math.pow(3, i));
+ 			
+ 			if (Math.abs(a) >= e) {
+ 				
+ 				sum += a;
+ 			}
+ 		}
+
+ 		System.out.println(sum);
+
+ 	} 
+    	 
+  public static void task20() {
+// 20. Даны числовой ряд и некоторое число е.
+//Найти сумму тех членов ряда, модуль которых больше или равен заданному е. 
+//Общий член ряда имеет вид: 	  
+	  
+	    double a;
+		
+		double e;
+		
+		double n;
+		
+		double sum;
+
+		a = 0;
+		
+		e = 0.01;
+	
+		n = 2;
+		
+		sum = 0;
+
+		for (n = 1; n < 7; n++) {
+			
+		a = 1 / ((3 * n - 2) * (3 * n + 1));
+			
+		if (Math.abs(a) >= e) {
+				
+			sum += a;
+				
+			}
+		}
+
+		System.out.println(sum);
+
+	}
+
+  public static void task21() {
+//  21. Составить программу для вычисления значений функции  F(x) на отрезке [а, b] с шагом h.
+//Результат представить в виде таблицы, первый столбец которой – значения  аргумента, второй - соответствующие значения функции:	  
+
+	int a;
+		
+		int b;
+		
+		double x;
+		
+		double y;
+		
+		double h;
+
+		a = 4;
+		
+		b = 8;
+		
+		h = 2;
+
+		System.out.println("_______________________________");
+		
+		System.out.println("   x    |    y       ");
+		
+		System.out.println("_______________________________");
+
+		for (x = a; x <= b; x += h) {
+			
+			System.out.print("|x = " + x + " | ");
+			
+			y = x - Math.sin(x);
+			
+			System.out.println("y =" + y + " |");
+		}
+	}
+  
+  
+  
+   public static void task22() {
+//22. Составить программу для вычисления значений функции 
+//F(x) на отрезке [а, b] с шагом h.
+//Результат представить в виде таблицы, первый столбец которой – значения  аргумента, 
+//второй - соответствующие значения функции: 	   
+	   
+            int a;
+			
+			int b;
+			
+			double x;
+			
+			double y;
+			
+			double h;
+
+			a = 2;
+			
+			b = 8;
+			
+			h = 3;
+
+		
+			System.out.println("_______________________________");
+			
+			System.out.println("   x    |    y       ");
+			
+			System.out.println("_______________________________");
+
+			for (x = a; x <= b; x += h) {
+				
+				System.out.print("|x = " + x + " | ");
+				
+				y = Math.pow(Math.sin(x), 2);
+				
+				System.out.println("y =" + y + " |");
+			}
+		}
+   
+   public static void task23() {
+
+// 23. Составить программу для вычисления значений функции  F(x) на отрезке [а, b] с шагом h.
+//Результат представить в виде таблицы, первый столбец которой – значения  аргумента, второй - соответствующие значения функции:	   
+	   
+	   int a;
+		
+		int b;
+		
+		double x;
+		
+		double y;
+		
+		double h;
+
+		a = 2;
+		
+		b = 10;
+		
+		h = 3;
+
+	
+		System.out.println("_______________________________");
+		
+		System.out.println("   x    |    y       ");
+		
+		System.out.println("_______________________________");
+
+		for (x = a; x <= b; x += h) {
+			
+			System.out.print("|x = " + x + " | ");
+			
+			y = (1 / Math.tan(x / 3)) + ((1 / 2) * Math.sin(x));
+			
+			System.out.println("y =" + y + " |");
+
+		}
+
+	}
+   
+   
+       public static void task24() {
+  // 24. Вводится натуральное число. Найти сумму четных цифр, входящих в его состав.
+  //Преобразовать его в другое число, цифры которого будут следовать в обратном порядке по сравнению с введенным числом.  	   
+    	   
+    	 int num;
+   		
+   		int rest;
+   		
+   		double sum;
+
+   		num = 42;
+   		
+   		sum = 0;
+
+   		int n1;
+   		
+   		n1 = 0;
+
+   		while (num != 0) {
+   			
+   			rest = num % 10;
+   			
+   			if (rest % 2 == 0) {
+   				
+   				sum += rest;
+   				
+   				n1 = n1 * 10 + num % 10;
+   				
+   				num /= 10;
+   			}
+   		}
+   		System.out.println("    " + sum + " ");
+   		
+   		System.out.println("    " + n1);
+
+   	}
+       
+  public static void task25() {
+	  
+// 25. Требуется определить факториал числа, которое ввел пользователь. 	  
+ 
+
+		int result;
+		
+		int n;
+
+		result = 1;
+		
+		n = 5;// Число пользователя 
+
+		if (n < 0) {
+			
+			System.out.println(" нельзя высчитать факториал ");
+		} 
+		else  {
+
+			
+			for (int i = 2; i <= n; i++) {
+				
+				result *= i;
+
+				
+				if (n == 0 || n == 1) {
+					
+				
+				}
+			}
+		}
+		System.out.println(" Факториал  равен " + result);
+	}
+  
+  
+    public static void task27() {
+    	
+//	27. Для каждого натурального числа в промежутке от m до n вывести все делители,
+//кроме единицы и самого числа. m и n вводятся с клавиатуры    	
+ 
+int m;
+		
+		int n;
+
+		m = 2;
+		
+		n = 100;
+
+		      for (int i = 1; i <= n; i++) {
+
+			if (n % i == 0 && i != m && i != 1) {
+
+				System.out.print(+i + ", ");
+			}
+		}
+		System.out.println();
+
+	}
+        
+    public static void task28() {
+    	
+    
+    	// 28. Написать программу, в которой вводятся два операнда Х и Y и знак
+    	// операции (+, –, /, *). Вычислить результат Z в зависимости от знака.
+    	 // Предусмотреть реакции на возможный неверный знак операции, а также на ввод
+    	// Y=0 при делении. Организовать возможность многократных вычислений без
+    	//перезагрузки программа (т.е. построить цикл). В качестве символа прекращения
+    	// вычислений принять ‘0’.
+    	  	
+         double x;
+		
+		double y;
+		
+		double z;
+
+		x = 0;
+		
+		y = 3.2;
+		
+		String operator = "+";
+
+		
+		do {
+			
+			switch (operator) {
+			
+			case "-":
+				
+				z = x - y;
+				
+				System.out.println(+x + "-" + y + "=" + z);
+				
+				break;
+			
+			case "+":
+			
+				z = x + y;
+				
+				System.out.println(+x + "+" + y + "=" + z);
+				
+				break;
+			
+			case "*":
+				
+				z = x * y;
+				
+				System.out.println(+x + "*" + y + "=" + z);
+				
+				break;
+			
+			case "/":
+				
+				if (y != 0) {
+					
+					z = x / y;
+					
+					System.out.println(+x + "/" + y + "=" + z);
+				
+				} else {
+					
+					System.out.println("на ноль делить нельзя");
+				}
+				
+				break;
+			
+			default:
+				
+				System.out.println("неверный знак");
+				
+				break;
+			}
+		
+		} while (x != 0);
+	}
+   
+    
+        public static void task29() {
+        	
+// 29. Даны два числа. Определить цифры, входящие в запись как первого так и второго числа.         	
+        	
+        	int a;
+    		
+    		int b;
+    		
+    		int c;
+    		
+    		int d;
+
+    		a = 91;
+    		
+    		b = 81;
+
+    		while (a > 0) {
+    			
+    			d = a % 10;
+    			
+    			a = a / 10;
+    			
+    			c = b;
+    			
+    			while (c > 0) {
+    				
+    				if (c % 10 == d) {
+    					
+    					System.out.println( d);
+    					
+    					break;
+    				
+    				}
+    				
+    				
+    				c = c / 10;
+    			}
+    		}
+    	}
+        
+        
+        public static void task31() {
+  //31. Компьютер генерирует пять чисел в диапазоне от 1 до 15 включительно. 
+ //Человек пытается их угадать. Программа должна выводить угаданные и неугаданные числа из тех, что сгенерировала программа,
+// а также ошибочные числа пользователя.        	
+        	
+        	
+    		int n;
+    		
+    		int d;
+
+    		n = (int) (Math.random() * 10 + 6);
+    		
+    		d = 15;
+    		
+    		if (d < n) {
+    			
+    			System.out.println("Неверно. Загадано число " + n);
+    		}
+    		if (d > n) {
+    			
+    			System.out.println("Неверно. Загадано число " + n);
+    		}
+    	
+    		if (d == n) {
+    			
+    			System.out.println("Верно!!! " + n);
+
+    		}
+    	}
+       
+   public static void task33() {
+	   
+//33. Найдите наибольшую цифру данного натурального числа.  	   
+	 
+	   
+	int num;
+		
+		int a;
+		
+		int b;
+		
+		int c;
+
+		num = 581;
+
+		
+		a = num % 10;
+		
+		b = (num / 10) % 10;
+		
+		c = (num / 100) % 10;
+
+		
+
+		if (a >= b & a > c || a > c & b >= a) {
+			
+			System.out.println("В числе " + num + " наибольшая цифра " + a);
+		} 
+		else {
+			
+			if (b > a & b >= c) {
+				
+				System.out.println("В числе " + num + " наибольшая цифра " + b);
+			} 
+			else {
+				
+				System.out.println("В числе " + num + " наибольшая цифра " + c);
+			}
+		}
+
+	}
+	   
+	public static void task34() {
+		
+//34. Найдите все четырехзначные числа, сумма цифр каждого из которых равна 15. 		
+int a;
+		
+		int b;
+		
+		int c;
+		
+		int d;
+		
+		int k;
+		
+		int i;
+
+      	for (k = 1000; k < 10000; k++) {
+			
+      		a = k % 10;
+			
+      		b = (k / 10) % 10;
+			
+      		c = (k / 100) % 10;
+			
+			d = k / 1000;
+			
+			i = a + b + c + d;
+			
+			if (i == 15) {
+				
+				System.out.print(k + " ");
+
+			}
+
+		}
+
+	}
+		
+	public static void task35() {
+		
+// 35. Найдите количество четных цифр данного натурального числа.		
+		
+
+		int num;
+		
+		int rest;
+
+		num = 124;
+		
+		int count = 0;
+
+	
+
+		while (num != 0) {
+			
+			rest = num % 10;
+		
+			num = num / 10;
+			
+			if (rest % 2 == 0) {
+				
+				count++;
+			}
+		}
+		System.out.println(count);
+
+	}
+ 
+	 public static void task36() {
+		 
+		// //36. Два двузначных числа, записанных одно за другим , 
+		//образуют четырёхзначное число, 
+		//которое делится на их произведение. Найти эти числа. 	 
+		 
+			int a;
+			
+			int b;
+			
+			int c;
+
+		
+
+			for (a = 5; a < 100; a++) {
+				
+				for (b = 10; b < 100; b++) {
+					
+					c = a * 100 + b;
+					
+					if (c % (a * b) == 0) {
+						
+						c /= (a * b);
+						
+						System.out.println();
+						
+						System.out.print(+a + " " + b);
+						
+						c = 0;
+					}
+				}
+			}
+		}
+
+	 public static void task38() {
+		 
+//38. Для заданного натурального числа определить, образуют ли его цифры арифметическую прогрессию.
+//Предполагается, что в числе не менее трёх цифр. Например: 1357, 963 		 
+	
+		    int a;
+			
+		    int b;
+			
+		     int c;
+			
+		    int d;
+
+			a = 1357;
+
+		
+
+			b = a % 10;
+			
+			a = a / 10;
+			
+			c = a % 10;
+			
+			a = a / 10;
+			
+			d = a % 10;
+			
+			a = a / 10;
+
+			if (b - c == c - d) {
+				
+				System.out.println(" цифры образуют арифметическую прогрессию");
+			
+			} else {
+			
+				System.out.println(" цифры не образуют арифметическую прогрессию");
+			} 
+	 
+	 
+	 }
+	  public static void task39() {
+		  
+// 39. В трехзначном числе зачеркнули старшую цифру.
+//Когда полученное число умножили на 7, то получили исходное число.
+//Найти это число. 		  
+		  
+	 
+		    int a;
+		
+		    int i;
+
+			for (i = 200; i < 1000; i++) {
+				
+				a = i % 200;
+				
+				if (7 * a == i) {
+					
+					System.out.println( i);
+
+			
+			}
+	 }
+}
+	  public static void task40() {
+	// 40. Получить все числа, не превышающие заданного числа 
+//N, которые делятся без остатка на все свои цифры.	  
+	
+		  int n;
+			
+		  boolean A;
+			
+			int m;
+
+			n = 45;
+
+	
+
+			for (int i = 1; i < n; i++) {
+				
+				m = i;
+			
+				A = true;
+				
+				while (m > 0 && A) {
+					
+					if (m % 10 == 0 || (i % (m % 10) != 0)) {
+					
+						A = false;
+				
+					} else {
+						
+						m = m / 10;
+					}
+				}
+				
+				if (A) {
+					
+					System.out.print(i + ", ");
+				}
+			}
+		}
+		  
+}
+	  
