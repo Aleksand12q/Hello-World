@@ -1,0 +1,117 @@
+36. Найти частное произведений четных и нечетных цифр четырехзначного числа.
+package by.htp.les04.main;
+import java.util.Scanner;
+public class Tesk_15 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Введите четырехзначное число");
+		int n = Integer.parseInt(scanner.nextLine());
+		double prChet = 1;
+		double prNechet = 1;
+		double prChast;
+		int x;
+		for(int i = 4; i > 0; i--)
+		{
+		x = n % 10;
+		System.out.println( x );
+		if (x % 2 == 0)
+		{
+		prChet *= x;
+		}
+		else {
+		prNechet *= x;
+		}
+		n = (n-x) / 10;
+		}
+		System.out.println("Четное произведение=" + prChet);
+		System.out.println("Не четное произведение=" + prNechet);
+		prChast = prChet / prNechet;
+		System.out.println("Частное произведений=" + prChast);
+		}
+	}
+package by.jonline.les05.main;
+//. Ввести любой символ и определить его порядковый номер,
+//а также указать предыдущий и последующий символы. 
+public class Task_43 {
+
+	public static void main(String[] args) {
+		
+		char a;
+		
+		int a1;
+		
+		int b;
+		
+		char b1;
+		
+		int c;
+		
+		char c1;
+
+		
+		a = 'g';
+		
+		a1 = (int) a;
+		
+		b = a1 - 1;
+		
+		b1 = (char) b;
+		
+		c = a1 + 1;
+		
+		c1 = (char) c;
+
+	    System.out.println("символ " + a + " порядковый номер: " + a1);
+		
+	    System.out.println(" предыдущий " + b1);
+		
+	    System.out.println("последующий " + c1);
+
+	}
+	}
+  
+  package by.jonline.les05.main;
+//38. Для данных областей составить линейную программу, 
+//которая печатает true, если точка с координатами (х, у) 
+//принадлежит закрашенной области, и false — в противном случае:
+public class Task_43 {
+
+	public static void main(String[] args) {
+		
+
+		boolean b;
+		int x;
+		int y;
+
+		x = 3;
+		y = 2;
+
+
+
+		if ((y >= 0) && (y <= x + 4) && (y <= 4 - x)) {
+			
+			b = true;
+		}
+		else {
+			
+			b = false;
+		}
+		System.out.println("Точка с координатами (" + x + "," + y + ") принадлежит закрашенной области " + b);
+
+		if (y >= 0 & y <= 4 & x <= 2 & x >= -2 || (y >= -3) & (y <= 0) & x <= 4 & x >= -4) {
+			b = true;
+		} else {
+			b = false;
+		}
+		System.out.println("Точка с координатами (" + x + "," + y + ") принадлежит закрашенной области " + b);
+
+		if (((x * x + y * y) <= 16) && x >= 0) {
+			b = true;
+		} else {
+			b = false;
+		}
+		System.out.println("Точка с координатами (" + x + "," + y + ") принадлежит закрашенной области " + b);
+
+	}
+}
