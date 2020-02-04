@@ -1,0 +1,1440 @@
+package by.htp.branch.main;
+import java.util.Scanner;
+public class branchtask {
+
+	public static void task1(){
+	// 1. Составить программу сравнения двух чисел 1 и 2.
+		//Если 1 меньше 2 – вывести на экран цифру 7, в противном случае – цифру 8. 	
+	
+       int a ;
+		
+		int b;
+		
+		int c ;
+		
+		int d;
+		
+		a = 1 ;
+	
+		b = 2;
+		
+		c = 7 ; //// вывод на экран если 1 больше двух
+		
+		d = 8;
+		
+		
+		if ( a < b   )
+		
+		{  System.out.println( c );
+ 	}
+		else {
+			System.out.println(d);
+		}
+
+	
+	}
+	
+	public static void task2() {
+	//2. Составить программу сравнения двух чисел 1 и 2.
+		//Если 1 меньше 2 – вывести на экран слово «yes», в противном случае – слово «no» 	
+         
+		int a;
+		
+		int b;
+
+		a = 1;
+		
+		b = 2;
+		
+		if( a < b  ) {
+		
+			System.out.println( " Yes " );
+
+	} else {
+		
+		System.out.println( " no " );
+	}
+
+}
+		
+	
+
+ public static void task3() {
+// 3. Составить программу сравнения введенного числа а и цифры 3. Вывести на экран слово «yes», если число а меньше 3; 
+	 //если больше, то вывести слово «no».	 
+        
+		
+		Scanner num   = new Scanner (System.in);
+	
+	   int a;
+	   
+	  System.out.println( " Enter a  " );
+	   
+	  a = num.nextInt();
+	  
+	if (  a < 3 ) {
+		
+		System.out.println( " Yes " );
+	} 
+	
+	else {
+	  
+	 System.out.println(  " No   "  );
+  }
+}
+
+ public static void task4() {
+// 4. Составить программу:  равны ли два числа а и b? 	 
+
+	Scanner num = new  Scanner(System.in);
+		
+		
+		int a ;
+		
+		System.out.println( "Enter a " );
+		
+		a = num.nextInt();
+		
+		int b;
+		
+		System.out.println(  " Enter b   "  );
+		
+		b = num.nextInt();
+	
+	    if ( a == b   ) {
+			
+			System.out.println( " Числа a and b равны "  );
+		}
+		else {
+			
+			System.out.println(  "   Числа a and b не равны    "  );
+		}
+
+	}
+	
+
+
+ public static void task5() {
+// 5. Составить программу: определения наименьшего из двух чисел а и b	 
+
+	 int a;
+		
+		int b;
+		
+		a = 8;
+		
+		b = 4;
+
+		if( a < b ) {
+			
+			System.out.println( " Число a меньше b    "   );
+		}else {
+			System.out.println( " Число b меньше a     "   );
+		}
+	 
+ }
+ 
+
+ public static void task6() {
+// 6. Составить программу: определения наибольшего из двух чисел а и b. 	 
+	int a ;
+		
+		int b;
+		
+		a = 6 ;
+		
+		b = 9;
+		
+		
+		if ( a > b) {
+			
+			System.out.println( "  число  a   больше    b  "  );
+		} else {
+			System.out.println( " Число b  больше а   " );
+		}
+
+	}
+ 
+ 
+ 
+public static void task7() {
+// 7. Составить программу нахождения модуля выражения a*x*x + b*x + c при заданных значениях a, b, c и х  	
+  int a ;
+      
+      int b ;
+      
+      int c;
+      
+      int x;
+      
+      int result;
+      
+      a = 2 ;
+      
+      b = 4;
+      
+      c = 4;
+      
+      x = 6;
+      
+      result = Math.abs((a * x * x ) + (b * x) + c  );
+      
+	  System.out.println( " Значение модуля вырожения  " + result );
+
+}
+
+public static void task8() {
+// 8. Составить программу нахождения наименьшего из квадратов двух чисел а и b. 	
+	int a;
+	
+	int b;
+	
+	int C_a ;
+	
+	int D_b ;
+	
+    a = 4 ;
+    
+    b = 3;
+    
+    C_a = a * a ;
+    
+    D_b = b * b ;
+	
+	if ( C_a > D_b  ) {
+		
+		System.out.println(   " Квардрат    a   больше квадрата     b "   );
+		
+	} else {
+		
+		System.out.println( "  Квадрат     a  меньше квадрата       b  "   );
+	}
+}
+	
+public static void task9() {
+// 9. Составить программу, которая определит по трем введенным сторонам, является ли данный треугольник равносторонним.	
+	
+	
+       int a ;
+
+       int b ;
+
+       int c ;
+
+        a = 9;
+ 
+        b = 9;
+
+        c = 4;
+
+if ( (a == b) && ( b == c) && ( c == a ) ) {
+	
+	System.out.println(   "  Треугольник abc равностороний " );
+
+} else {
+	
+	System.out.println(  " Треугольник   abc не равностороний   " );
+}
+}
+	
+      public  static void task10() {
+//10. Составить программу, которая определит площадь какого круга меньше. 	
+    	  
+    	  int s;
+  		
+  		  int s1;
+  		
+  		  s = 4;
+  		
+  		  s1 = 3;
+  		
+  		
+  		 if ( s < s1 ) {
+  			 System.out.println( " Площадь круга s больше s1 " );
+  		 
+  		 } else {
+  			 
+  			 System.out.println(  " Площадь круга s1 больше s " );
+  		 }
+      }
+   
+    public static void task11() {
+// 11. Составить программу, которая определит площадь какого треугольника больше.     	
+    	
+    	  int s;
+    		
+  		  int s1;
+  		
+  		  s = 4;
+  		
+  		  s1 = 3;
+  		
+  		
+  		 if ( s > s1 ) {
+  			 System.out.println( " Площадь круга s больше s1 " );
+  		 
+  		 } else {
+  			 
+  			 System.out.println(  " Площадь круга s1 больше s " );
+  		 }
+     }
+    
+      public static void task12() {
+// 12. Даны три действительных числа. Возвести в квадрат те из них, значения которых неотрицательны, и в четвертую степень — отрицательные.     	  
+    
+    	  int a ;
+  		
+  		int b ;
+  		
+  		int c ;
+  		
+  		int l; // числа неотрицательные 
+  		
+  		int k; // числа отрицательные 
+  		
+  		int p;
+  		
+  		a = 4;
+  		
+  		b = -2;
+  		
+  		c = -4;
+  		
+  		if ( a > 0   ) {
+  			
+  			 l = a * a ; 
+  			 System.out.println( "Квадрат не отрицательногое числа a  "  + l  );
+  		
+  		} else {
+  			  l = a * a * a *a;
+  			System.out.println (  "  Четвертая степень отрицательного числа a " + l );
+  		}
+  		 if ( b > 0) { k = b * b;
+  		 
+  		 System.out.println(  " квадрат не отрицательного числа b  " + k );
+  			 
+  			 
+  		 } else {
+  			
+  			 k = b * b * b * b;
+  			 
+  			 System.out.println(  "   Четвертая степень отрицательного числа b " + k );
+  			 
+  		 }
+  		 
+  		 if (  c > 0 ) {
+  			 
+  			 p = c * c ;
+  			 
+  			 System.out.println( "   квадрат не отрицательного числа c  " + p  );
+  		 } if ( c < 0) {
+  			 
+  			 p = c * c * c *c;
+  			 System.out.println(  "    Четвертая степень отрицательного числа c   " + p  );
+  			 
+  	 }
+ }
+      
+ public static void task13() {
+//13. Даны две точки А(х1, у1) и В(х2, у2). Составить алгоритм, определяющий,
+//которая из точек находится ближе к началу координат. 
+	 
+
+		double x1;
+		
+		double x2;
+		
+		double y1;
+		
+		double y2;
+		
+		double A;
+		
+		double B;
+		
+		x1 = 3;
+		
+		x2 = 3;
+		
+		y1 = 3;
+     
+		y2 = 3;
+		
+		A = Math.sqrt((x1 * x1) + (y1 * y1 ));
+		
+		B = Math.sqrt((x2*x2) + ( y2 * y2 ));
+		
+		
+		if ( A > B ) {
+			System.out.println( " Точка B ближе к началу координат " );
+			
+			
+		} 
+		if  ( A < B   ) {
+			System.out.println( " Точка А ближе к началу координат "  );
+			
+		}else {
+			
+			System.out.println( " Точки А и В находятся на одно расстоянии от начало координат "  );
+			
+		}
+}
+
+     public static void task14() {
+ // 14. Даны два угла треугольника (в градусах). Определить, существует ли такой треугольник, 
+  //и если да, то будет ли он прямоугольным
+    	 
+    		int a ; 
+    		
+    		int b;
+    		
+    		a = 60;
+    		
+    		b = 230;
+    		
+    		if ( (a + b) ==  90) {
+    			
+    			System.out.println(   " Треугольник прямоугольный    "  );
+    			
+    			
+    		}
+    		if( (a  + b)== 180  ) {
+    			
+    			System.out.println( " Треугольник существует   "  );
+    		}
+    		if ( (a + b ) < 180   ) {
+    			
+    			System.out.println( " Треугольника не существует   "  );
+    		}
+          }
+
+    public static void task15() {
+ // 15. Даны действительные числа х и у, не равные друг другу. Меньшее из этих двух чисел заменить 
+ //половиной их суммы, а большее — их удвоенным произведением.    	
+	int x ;
+		
+		int y ;
+		
+		int z;
+		
+		int e;
+		
+		x = 4;
+		
+		y = 1;
+		
+		z = (x + y) / 2;
+	    
+		e = x * y * 2 ;
+		
+		if (( x != y)  ) {
+			if ( x > y  ) {
+			
+		System.out.println( z  );
+			
+	}
+		}else {
+		
+		System.out.println( " x == y  "  );
+	}
+		if ( x < y  ) {
+			
+			System.out.println( e );
+		}
+}
+ 
+  public static void task16() {
+// 16. На плоскости ХОY задана своими координатами точка А.
+//Указать, где она расположена (на какой оси или в каком координатном угле). 	  
+
+
+		int x;
+		
+		int y;
+		
+		x = -6;
+		
+		y = -3;
+		
+	
+		if ((x == 0) && (y == 0)) 
+		{
+			System.out.println(" Точка А в центре плоскости");
+		} else if (x == 0)
+		{
+			System.out.println(" Точка А на оси Y"  );
+		} 
+		else if (y == 0) {
+			
+			System.out.println(" Точка А на оси X");
+		} 
+		else if (x > 0 && y > 0) {
+			
+			System.out.println ( "Точка А в первой четверти ");
+		} 
+		else if (x < 0 && y > 0) {
+			
+			System.out.println( "Точка А в второй четверти ");
+		}
+		else if (x < 0 && y < 0) {
+			
+			System.out.println( "Точка А в третьей четверти ");
+
+		}
+		else {
+			System.out.println(" Точка А в четвертой четверти ");
+		}
+}  
+
+  public static void task17() {
+// 17. Даны целые числа т, п. Если числа не равны, то заменить каждое из них одним и тем же числом, 
+//равным большему из исходных, а если равны, то заменить числа нулями. 	  
+	  
+	int m;
+		
+		int n;
+		
+		m = 4;
+		
+		n  = 4;
+		
+		if ( m != n  ) {
+			
+			if ( m > n  ) {
+				
+				n = m;}
+				
+				if ( n > m  ) {
+					
+					m = n;
+	 	System.out.println( m + "  числа не равны  m > n  " );
+					
+	 	System.out.println( n + " числа не равны n > m  " );
+				}
+			}
+			
+	     if ( m == n  ) {
+		
+		n = m = 0;
+
+		System.out.println( n + " Числа равны "   );
+		
+	}
+ }
+
+  public static void task18() {
+//18. Подсчитать количество отрицательных среди чисел а, b, с. */	  
+	
+	    int a;
+		
+	    int b;
+		
+	    int c;
+		
+	    int count;
+
+		a = 8;
+		
+		b = -2;
+	
+		c = -5;
+		
+		count = 0;
+
+		if (a < 0) {
+			
+			count++;
+		}
+		if (b < 0) {
+			
+			count++;
+		}
+		if (c < 0) {
+			
+			count++;
+		} else {
+			
+			count = 0;
+		}
+
+		System.out.println(" отрицательные числа " + count);
+	}
+
+  public static void task19() {
+	  
+	    int a;
+		
+	    int b;
+		
+		int c;
+		
+		int coun;
+
+		a = 38;
+		
+		b = 2;
+		
+		c = 5;
+		
+		coun = 0;
+
+		if (a > 0) {
+			
+			coun++;
+		}
+		if (b > 0) {
+			
+			coun++;
+		}
+		if (c > 0) {
+			
+			coun++;
+		} else {
+			
+			coun = 0;
+		}
+
+		System.out.println("положительные чиса " + coun);
+	}
+  
+    public static void task20() {
+	
+	// 20. Определить, делителем каких чисел а, b, с является число k
+	
+double a ;
+		
+		double b ;
+		
+		double c ;
+		
+		double k;
+
+		a = 6;
+		
+		b = 7;
+		
+		c = 2;
+		
+		k = 4;
+		
+		if ( a % k == 0 ) {
+			
+			System.out.println( "число k явлется делителем числа  a "   );
+			
+		}else {
+			
+			System.out.println( " Число К не является делителем числа a  " );
+		}
+		
+		if ( b % k == 0 ) {
+			
+			System.out.println( " Число К является делителем числа b  " );
+		}else {
+			System.out.println( " Число К не является делителем числа b  ");
+		}
+		if ( c % k == 0 ) {
+			
+			System.out.println(  " Число К является делителем числа c "  );
+		}else {
+			System.out.println( "Число К не является делителем числа с " );
+		}
+}
+
+    public static void task21() {
+ // 21. Программа — льстец. На экране высвечивается вопрос 
+    	//«Кто ты: мальчик или девочка? Введи Д или М». В зависимости от ответа на экране должен появиться текст «Мне нравятся девочки!» 
+    	//или «Мне нравятся мальчики!».    	
+    	
+    	System.out.println( " Кто ты мальчик или девочка ? "  );
+        
+		Scanner num = new Scanner(System.in);
+		
+	    char e;
+		
+		e = 'D';
+		
+		switch(e) {
+		
+		case 'M':
+			
+			System.out.println(" Мне нравятся мальчики ");
+			
+			break;
+		
+		case 'D':
+		
+			System.out.println( " Мне нравятся девочки ");
+			
+			break;
+			
+			default:
+				
+			System.out.println( " Если хотите еще рас Льстец то введите D или M еще рас ");
+				
+		}
+  }
+   
+    public static void task22() {
+
+// 22. Перераспределить значения переменных х и у так,
+//чтобы в х оказалось большее из этих значений, а в y - меньшее. 	 
+	 
+int x;
+		
+		int y;
+		
+		int temp;
+
+		x = 8;
+		
+		y = 10;
+
+		if (y > x) {
+			
+			temp = y;
+		     
+			y = x;
+			
+			x = temp;
+			
+			System.out.println(" x= " + x + " y=" + y);
+		
+		} else  {
+			
+			System.out.println(" x= " + x + " y=" + y);
+		}
+	}
+    
+    public static void task23() {
+  
+ // 23. Определить правильность даты, введенной с клавиатуры (число — от 1 до 31, месяц — от 1 до 12).
+ //Если введены некорректные данные, то сообщить об этом.    	
+    	
+    	  int a ;
+    	     
+    	     int b;
+    	     
+    	     a = 1;
+    	    
+    	     b = 12;
+    	     
+    	     if (a <=31  ) {
+    	    	 
+    	    	 System.out.println( a+" День "  );
+    	     }else {
+    	    	 System.out.println(   " Введите коректные данные  даты "  );
+    	    	 
+    	     }
+    	     if ( b <=12 ) {
+    	    	 System.out.println( b +"Месяц" );
+    	     }else {
+    	    	 System.out.println(" Введите коректные данные месяца ");
+    	     }
+    	     
+    	  }
+
+    public static void task24() {
+    
+  // 24. Составить программу, определяющую результат гадания на ромашке — «любит—не любит»,
+    //взяв за исходное данное количество лепестков п.  	
+    	
+    	int n;
+		n =4;
+		
+		if ( n % 2 ==0 ) {
+			
+			System.out.println( " любит  " );
+		}else {
+			System.out.println( " не любит " );
+		}
+		
+
+	}
+ 
+    public static void task25() {
+   
+    // 25. Написать программу — модель анализа пожарного датчика в помещении, которая выводит сообщение
+    	//«Пожароопасная ситуация », если температура в комнате превысила 60° С.   	
+    
+	int C;
+		
+		C = 40;
+		
+		if ( C < 60 ) {
+			System.out.println( " Пожарная ситуация "  );
+		} else {
+			System.out.println( " Все в норме " );
+		}
+}
+    
+    public static void task26() {
+  // 26. Написать программу нахождения суммы большего и меньшего из трех чисел.   	
+	int a ;
+		
+		int b ; 
+		
+		int c;
+
+		a = 1;
+		
+		b = 1;
+		
+		c = 2;
+		
+		int max;
+		
+	    int min;
+		
+		 if ( a < b  ) {
+			 if ( b < c  ) {
+			     min = a + b;	 
+				 max = b + c;
+				 System.out.println( max );
+			     System.out.println( min );
+			 }
+			 
+		 }
+		 
+		 if ( c < b  ) {
+			 if (b < a ) {
+				 min = c + b;
+				 max = b + a;
+				 System.out.println( max );
+			     System.out.println( min );
+			 }
+		 }
+		
+		 if ( a < c ) {
+			 if ( c < b) {
+				 min = a + c;
+				 max = c + b;
+				 System.out.println( max );
+			     System.out.println( min );
+			 }
+		 }
+        if ( b < a ) {
+        	if ( a < c) {
+        		min = a + b;
+        		max = a + c ;
+        	    System.out.println( min ); 
+        		System.out.println( max );
+        	}
+        }
+	
+        if ( b < c ) {
+        	
+        	if ( c < a ) {
+        		min = b + c ;
+        		max = c + a ;
+        		System.out.println( min );
+        		System.out.println( max  );
+        		
+        	}
+        }
+     
+        if ( a == b) {
+        	
+        	if ( b < c  ) {
+        		min = a + b;
+        		max = b + c;
+        	System.out.println( min );
+        	System.out.println( max );
+        	}
+        }
+	
+        if (a == c) {
+        	if (c < b ) {
+        		min = a + c ;
+        		max = b + c ;
+        		System.out.println( min );
+        		System.out.println( max );
+        	}
+        }
+	
+        if (b == c ) {
+        	if ( c < a  ) {
+        		min = b + c ;
+        		max = c + a ;
+        		System.out.println( min );
+        		System.out.println(max);
+        
+        		
+        	}
+        }
+	     
+        if ( a == b ) {
+        	if ( b == c  ) {
+        		System.out.println( " Условие не коректное "   );
+        	}
+        }
+ }
+    
+ public static void task27()   {
+// 27. Найти max{min(a, b), min(c, d)}.	 
+	 
+		int a;
+		
+		int b;
+		
+		int c;
+		
+		int d;
+		
+		int min_ab;
+		
+		int min_cd;
+		
+		int max;
+
+		a = 6;
+		
+		b = 1;
+		
+		c = 4;
+		
+		d = 2;
+
+		if (a > b) {
+			min_ab = b;
+		} else {
+			min_ab = a;
+		}
+
+		if (c > d) {
+			min_cd = d;
+		} else {
+			min_cd = c;
+		}
+
+		if (min_cd > min_ab) {
+			max = min_cd;
+		} else {
+			max = min_ab;
+		}
+
+		System.out.println(" max{min(" + a + "," + b + "),min(" + c + "," + d + ")} = " + max);
+	}
+ 
+    public static void task28() {
+    	
+  //28. Даны три числа a, b, с. Определить, какое из них равно d.
+   //Если ни одно не равно d, то найти max(d — a, d — b, d — c).    	
+    	
+	int a ; 
+		
+		int b ; 
+		
+		int c ; 
+		
+		int d ;
+		
+		int i;
+		
+		int f ; 
+		
+		int g ;
+		
+		int max;
+		
+		a = 3;
+		
+		b = 4;
+		
+		c = 5;
+		
+		d = 9;
+		
+		if ( a == d  ) {
+		
+			System.out.println( " a == d "  );
+		
+		}else if (b == d )  {
+		
+			System.out.println(" b == d ");
+		
+		}else if( c == d ) {
+		
+			System.out.println( "d == c  " );
+		
+		}else {
+			
+			i = d - a;
+			
+			f = d - b;
+			
+			g = d - c;
+			
+			if (( i > f )&&(f > g ) ) {
+				
+				max = i;
+				
+				System.out.println( " i "+" = "+ max );
+			
+			} else if ((f > g)&& ( g > i)   ) {
+				
+				max = f;
+				
+				System.out.println(" f "+" = "+ max );
+			}else {
+				max = g;
+				
+				System.out.println( " g "+" = " + max );
+			}
+	}
+	
+}
+   
+    public static void task29() {
+// 29. Даны три точки А(х1,у1), В(х2,у2) и С(х3,у3). 
+//Определить, будут ли они расположены на одной прямой.       	
+    	
+	    int a ; 
+		
+		int b ; 
+		
+		int c ; 
+		
+		int d ;
+		
+		int i;
+		
+		int f ; 
+		
+		int g ;
+		
+		int max;
+		
+		a = 3;
+		
+		b = 4;
+		
+		c = 5;
+		
+		d = 9;
+		
+		if ( a == d  ) {
+			
+			System.out.println( " a == d "  );
+		
+		}else if (b == d )  {
+			
+			System.out.println(" b == d ");
+		
+		}else if( c == d ) {
+			
+			System.out.println( "d == c  " );
+		
+		}else {
+			
+			i = d - a;
+			
+			f = d - b;
+			
+			g = d - c;
+			
+			if (( i > f )&&(f > g ) ) {
+				
+				max = i;
+				
+				System.out.println( " i "+" = "+ max );
+			
+			} else if ((f > g)&& ( g > i)   ) {
+				
+				max = f;
+				
+				System.out.println(" f "+" = "+ max );
+			
+			}else {
+				
+				max = g;
+				
+				System.out.println( " g "+" = " + max );
+			}
+			
+		}
+    } 	
+  
+      public static void task30() {
+    	  
+// 30. Даны действительные числа а,b,с. Удвоить эти числа, если а > b > с,
+//и заменить их абсолютными значениями, если это не так.     	  
+    		int a;
+    		
+    		int b;
+    		
+    		int c;
+
+    		a = 5;
+    		
+    		b = 4;
+    		
+    		c = 2;
+
+    		if ((a > b) && (b > c)) {
+    			
+    			a *= a ;
+    			
+    			b *= b  ;
+    			
+    			c *= c  ;
+    			
+    		} else {
+    			a = Math.abs(a);
+    			
+    			b = Math.abs(b);
+    			
+    			c = Math.abs(c);
+    		}
+    		System.out.println( " Замена их обсолютными значениями " + a + ", " + b + ", " + c);
+
+    	}  
+     
+        public static void task31() {
+        	
+// 31. Заданы размеры А, В прямоугольного отверстия и размеры х, у, z кирпича.
+//Определить, пройдет ли кирпич через отверстие.       
+        	
+        	int A; // высота  отверстия
+        	
+        	int B; // ширина отверстия
+        	
+        	A = 10;
+        	
+        	B = 12;
+        	
+        	int x; // ширина кирпича
+        	
+        	int y; // высота либо толщина 
+        	
+        	int z; // длинна 
+        	
+        	x = 2;
+        	
+        	y = 3;
+        	
+        	z = 2;
+        	
+        	if (( A > x)&&( B > z )) {
+        		System.out.println( " Кирпич пройдет   "  );
+        	}else {
+        		System.out.println( " Кирпич не пойдет  " );
+        	}
+       }
+        
+       public static void task32() {
+    	   
+    	  // 32. Написать программу, которая по заданным трем числам определяет,
+    	   ///является ли сумма каких-либо двух из них положительной.     	   
+    	   
+    		int a ;
+    		
+    		int b ;
+    		
+    		int c ;
+    		
+    		int s;
+    		
+    		a = -4;
+    		
+    		b = 3;
+    		
+    		c = -6;
+    		
+    		s = a + b;
+    		
+    		if ( s > 0  ) {
+    			
+    			System.out.println(" Сумма положительная  " + s );
+    		
+    		}else {
+    			
+    			System.out.println(" Сумма отрицательная " + s  );
+    		}
+    		s = b + c;
+    		
+    		
+    		if ( s > 0 ) {
+    		
+    			System.out.println( " Сумма положительна " + s );
+    		
+    		}else {
+    			
+    			System.out.println(" Сумма отрицательна " + s );
+    		}
+    	     
+    		s = c + a;
+    	    
+    	     if ( s > 0 ) {
+    	    	
+    	    	 System.out.println( " Сумма пложительная " + s );
+    	     
+    	     }else {
+    	    	 
+    	    	 System.out.println(" Сумма отрицательная " + s);
+    	        }
+    	     }
+    	   
+    public static void task33() {
+ 
+ // 33. Написать программу, которая по паролю будет определять уровень доступа сотрудника к секретной информации в базе данных. 
+//Доступ к базе имеют только шесть человек, разбитых на три группы по степени доступа. Они имеют следующие пароли: 9583, 1747 — доступны модули баз А, В, С; 3331, 7922 — доступны модули баз В, С;
+//9455, 8997 — доступен модуль базы С.    	
+    
+    	int password;
+
+		password = 8888;
+
+		if (password == 9583 || password == 1747) {
+			
+			System.out.println("Доступны модули баз А, В, С");
+		
+		} else if (password == 3331 || password == 7922) {
+			
+			System.out.println(" Доступны модули баз В, С");
+		
+		} else if (password == 9455 || password == 8997) {
+			
+			System.out.println(" Доступен модуль баз С");
+		
+		} else {
+			
+			System.out.println(" Отказанно в доступе ");
+		}
+	}
+ 
+  public static void task34() {  
+//34. Составить программу, реализующую эпизод применения компьютера в книжном магазине. 
+    //Компьютер запрашивает стоимость книг, сумму денег, внесенную покупателем; если сдачи не требуется, печатает на экране «спасибо»; если денег внесено больше, чем необходимо, то печатает «возьмите сдачу» и указывает сумму сдачи; если денег недостаточно,
+    //то печатает сообщение об этом и указывает размер недостающей суммы.
+
+	  int sale;
+	     
+	     int a;
+	     
+	     int b;
+	     
+	     sale = 230;
+	     
+	     a  = 330;
+	     
+	     if ( sale == a   ) {
+	    	 
+	    	 System.out.println( " Thank you "  );
+	     
+	     }  else if ( a > sale) {
+	    	 
+	    	 b = a - sale;
+	    	 System.out.println( " Спасибо вам , возьмите здачу  "  +  b );
+	     }else {
+	    	 System.out.println( " Недостаточно средств  " );
+	     }
+		}
+
+    public static void task35() {
+ // 35. Вычислить число и месяц в невисокосном году по номеру дня.   	
+    	
+    	int daymohth;
+		int numday;
+
+		daymohth = 0;
+		numday = 399;
+
+		if (numday > 0 && numday <= 31) {
+			
+			daymohth = numday;
+		
+			System.out.println(" Январь " + daymohth + " число");
+		
+		} else if (numday > 31 && numday <= 59) {
+			
+			daymohth = numday - 31;
+			
+			System.out.println(" Февраль " + daymohth + " число");
+		
+		} else if (numday > 59 && numday <= 90) {
+			
+			daymohth = numday - 59;
+			
+			System.out.println(" Март " + daymohth + " число");
+		
+		} else if (numday > 90 && numday <= 120) {
+			
+			daymohth = numday - 90;
+			
+			System.out.println(" Апрель " + daymohth + " число");
+		
+		} else if (numday > 120 && numday <= 151) {
+			
+			daymohth = numday - 120;
+			
+			System.out.println(" Май " + daymohth + " число");
+		
+		} else if (numday > 151 && numday <= 181) {
+			
+			daymohth = numday - 151;
+			
+			System.out.println(" Июнь " + daymohth + " число");
+		
+		} else if (numday > 181 && numday <= 212) {
+			
+			daymohth = numday - 181;
+			
+			System.out.println(" Июль " + daymohth + " число");
+		
+		} else if (numday > 212 && numday <= 243) {
+			
+			daymohth = numday - 212;
+			
+			System.out.println(" Август " + daymohth + " число");
+		
+		} else if (numday > 243 && numday <= 273) {
+			
+			daymohth = numday - 243;
+			
+			System.out.println(" Сентябрь " + daymohth + " число");
+		
+		} else if (numday > 273 && numday <= 304) {
+			
+			daymohth = numday - 273;
+			
+			System.out.println(" Октябрь " + daymohth + " число");
+		
+		} else if (numday > 304 && numday <= 334) {
+			
+			daymohth = numday - 304;
+			
+			System.out.println(" Ноябрь " + daymohth + " число");
+		
+		} else if (numday > 334 && numday <= 365) {
+			
+			daymohth = numday - 334;
+			
+			System.out.println("Декабрь " + daymohth + " число");
+		
+		} else {
+			
+			System.out.println("Такого дня в году  не существует ");
+		}
+ }
+    
+        public static void task36() {
+ // 36. Вычислить значение функции:        	
+        	double x;
+    		
+        	double y;
+
+    		x = 4;
+
+    		if (x <= 3) {
+    		
+    			y = x * x - 3 * x - 9;
+    		
+    			System.out.println("Значение функции " + y);
+    	
+    		} else {
+    			
+    			y = 1 / (Math.pow(x, 3) + 6);
+    			
+    			System.out.println("Значение функции" + y);
+    		}
+    	}
+ 
+         public static void task37() {
+   
+ // 37. Вычислить значение функции:    
+        	 
+
+     		double x;
+     	
+     		double y;
+
+     		x = 2.0;
+
+     		if (x >= 3) {
+     		
+     			y = -(x * x) + 3 * x + 9;
+     		
+     			System.out.println(" Значение функции " + y);
+     		
+     		} else {
+     		
+     			y = 1 / (Math.pow(x, 3) - 6);
+     			
+     			System.out.println(" значение функции " + y);
+     		}
+     	}
+   
+         public static void task38() {
+ // 38. Вычислить значение функции:        	 
+     		double x;
+    		
+     		double y;
+
+    		x = 5.2;
+
+    		if ((x >= 0) && (x <= 3)) {
+    			
+    			y = x * x;
+    			
+    			System.out.println(" Значение функции " + y);
+    		
+    		} else {
+    			
+    			y = 4;
+    			
+    			System.out.println("Значение функции" + y);
+    		}
+    		
+    	}
+        	 
+ 
+    public static void task39() {
+    	
+  // 39. Вычислить значение функции:   	
+    
+    	double x;
+		
+    	double y;
+
+		x = 1.0;
+
+		if (x >= 8) {
+			
+			y = -(x * x) + x - 9;
+			
+			System.out.println("Значение функции" + y);
+		
+		} else {
+			
+			y = 1 / (Math.pow(x, 4) - 6);
+			
+			System.out.println("Значение функции" + y);
+		}
+	}
+   
+    public static void task40() {
+    	
+      //40. Вычислить значение функции: 
+    	
+    	double x;
+	
+    	double y;
+
+		x = 3.5;
+
+		if (x <= 13) {
+		
+			y = -(Math.pow(x, 3)) + 9;
+			
+			System.out.println("Значение функции" + y);
+		
+		} else {
+			
+			y = -3 / (x + 1);
+			
+			System.out.println("Значение функции" + y);
+		}
+	}
+	
+    	
+    }
