@@ -1,0 +1,123 @@
+package by.htp.dekompozishion.main;
+
+public class task {
+
+
+   public static void task1(){
+	 //  1. Треугольник задан координатами своих вершин.
+	   //Написать метод для вычисления его площади.   
+	   
+
+   	double x1;
+		
+   	double x2;
+		
+   	double x3;
+		
+   	double y1;
+		
+   	double y2;
+		
+   	double y3;
+
+	double a;
+		
+	double b;
+		
+	double c;
+		
+	double p;
+		
+	double pp;
+		
+	double s;
+
+	x1 = 10.0;
+		
+	y1 = 6.0;
+
+	x2 = 4.0;
+		
+	y2 = 7.0;
+
+	x3 = 2.0;
+		
+	y3 = 2.0;
+
+	
+		a =(int) Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
+		
+	 	b =(int) Math.sqrt(Math.pow(x1 - x3, 2) + Math.pow(y1 - y3, 2));
+	 		
+	    c =(int) Math.sqrt(Math.pow(x2 - x3, 2) + Math.pow(y2 - y3, 2));
+		
+	    p = perimetr( a ,  b ,  c );
+
+	   System.out.println(p+ " периметр ");
+	    
+	    s =(int) plo(a,b,c,p);
+
+	    System.out.println(s+" площадь ");
+ }
+
+	public static double perimetr( double a , double b, double c ) {
+		
+  
+     
+       double p;
+
+        p = a + b + c;	
+		
+       return p ;
+ 
+ }
+				
+    public static double plo(double p , double a, double b, double c) {
+	
+	   double s;
+	   
+	   double pp;
+	   
+	   pp = (int)p / 2;
+	   
+	   s =(int) Math.sqrt(pp * (pp - a) * (pp - b) * (pp - c));
+	   
+	   return s ;
+	
+      }
+	   
+	   
+    public static void task6() {
+    // 6. Вычислить площадь правильного шестиугольника со стороной а, 
+   //используя метод вычисления площади треугольника	
+    	
+    	
+    	 double a ;
+    	
+         double stp;
+        
+         a = 2;
+        
+        stp = plo(a);
+      
+        System.out.println(stp);
+
+           }
+
+         public static  double  plo( double a ) {
+    	   
+               double stp;
+               
+        	  stp = 3 * a * a * Math.sqrt(3);
+        	  
+        	  stp = stp / 2 ;
+    	   
+    	   
+    	   
+    	   return stp;
+       }
+
+}
+	   
+   
+	
