@@ -119,5 +119,73 @@ public class task {
 
 }
 	   
-   
+    // 3. Написать метод(методы) для нахождения 
+    	//наибольшего общего делителя четырех натуральных чисел 	
+    	
+    	
+		int a ;
+		
+		int b;
+		
+		int c ;
+		
+		int d;
+		
+		int nod;
+		
+	    a = 27 ;
+		
+		b = 15;
+		
+		c = 9;
+		
+		d = 3;
+		
+       int min3;
+
+       min3 = min (a,b,c,d);
+	     
+	   nod = min3;
+	
+	    System.out.println( nod + " Минимальное число  " );
+	    
+	    nod = nod(min3,a,b,c,d);
+	    
+	   System.out.println( nod + " общий делитель " );
+	}
+
+	public static int min ( int a , int b , int c , int d ) {
+		
+		
+		 int min;
+
+	     int min2;
+
+	     int min3;
+	         
+	     min = Math.min(a,b);
+
+	      min2 = Math.min(min,d);
+
+	      min3 = Math.min(min2,c);
+		
+	        
+	        
+		return min3 ;
+	}
+ 	
+	public static int nod ( int nod , int a , int b, int c, int d ) {
+		
+       for (int i = nod; i > 0; i--) {
+	        
+	  if ((a % i == 0) &&( b % i == 0)&&(c % i == 0)&&( d % i == 0 )  )  {
+			          
+	   nod = i;
+	
+           break;
+	         }
+         }
+		
+		return nod ;
+	}
 	
